@@ -1,0 +1,202 @@
+[
+  {
+    "review_id": "4446",
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "positive"
+    }
+  },
+  {
+    "review_id": "8612",
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": "6729",
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": "6292",
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "positive"
+    }
+  },
+  {
+    "review_id": "1639",
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": "4277",
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": "1957",
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "negative"
+    }
+  },
+  {
+    "review_id": "6683",
+    "aspects": [
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": "1228",
+    "aspects": [
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": "7814",
+    "aspects": [
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": "7619",
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "positive"
+    }
+  },
+  {
+    "review_id": "6817",
+    "aspects": [
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": "7042",
+    "aspects": [
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "price": "positive"
+    }
+  },
+  {
+    "review_id": "8141",
+    "aspects": [
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": "10016",
+    "aspects": [
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": "9962",
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": "3871",
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": "6255",
+    "aspects": [
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": "9442",
+    "aspects": [
+      "ambiance"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive"
+    }
+  },
+  {
+    "review_id": "4365",
+    "aspects": [
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "service": "positive"
+    }
+  }
+]

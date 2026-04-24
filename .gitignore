@@ -54,6 +54,11 @@ ENV/
 # Jupyter
 .ipynb_checkpoints/
 
+# Phase 2 local artifacts
+chroma_store/
+models/
+absa_phase2.db
+
 # Node.js
 node_modules/
 npm-debug.log*
