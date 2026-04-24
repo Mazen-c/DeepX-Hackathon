@@ -1,0 +1,37 @@
+[
+  {
+    "review_id": 4446,
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 8612,
+    "aspects": [
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6729,
+    "aspects": [
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "general": "positive",
+      "price": "positive"
+    }
+  }
+]

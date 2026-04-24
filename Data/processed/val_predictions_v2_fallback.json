@@ -1,0 +1,7444 @@
+[
+  {
+    "review_id": 4446,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8612,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6729,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 6292,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "general": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1639,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "food": "negative",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 4277,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1957,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6683,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1228,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "positive",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7814,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7619,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 6817,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7042,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8141,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 10016,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9962,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 3871,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6255,
+    "aspects": [
+      "delivery",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 9442,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4365,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5812,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1479,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 329,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7382,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5126,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2922,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "food": "negative",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 5365,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9643,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5419,
+    "aspects": [
+      "delivery",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 3732,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5701,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5390,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5148,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1009,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "food": "negative",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 8752,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 3560,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1470,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9158,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5795,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6279,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "positive",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4479,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9119,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 6048,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9687,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1916,
+    "aspects": [
+      "app_experience",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4671,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9258,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 8562,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7153,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9010,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9502,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 5771,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 2520,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 356,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4449,
+    "aspects": [
+      "food",
+      "general",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "general": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6307,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5022,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2025,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 7607,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 658,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 4562,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1148,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5618,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "food": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3569,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8709,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 504,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5014,
+    "aspects": [
+      "food",
+      "general",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "general": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1182,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4309,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6071,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1387,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1856,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8711,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6531,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6194,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 8598,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8827,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 331,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 2184,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6149,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7813,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4169,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6473,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8085,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2139,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 10017,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8593,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8377,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2832,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5116,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2255,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4646,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9578,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9522,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5064,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "food": "positive",
+      "price": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1843,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7880,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 6461,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 3800,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5140,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8436,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1176,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5357,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4245,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5455,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 569,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 3238,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "cleanliness": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5375,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5369,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4838,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8517,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 8976,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7569,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3962,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3966,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4670,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5295,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5063,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "general": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 515,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3751,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 929,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8449,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1206,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5906,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4191,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2601,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4507,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "food": "negative",
+      "price": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1865,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 4639,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 7036,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 8804,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 5330,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8408,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8240,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 9712,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 3352,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 6573,
+    "aspects": [
+      "food",
+      "general",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "negative",
+      "general": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2737,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4382,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 866,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2220,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7013,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 10015,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 5107,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5460,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6144,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 6126,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "food": "negative",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7590,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 1207,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5234,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7788,
+    "aspects": [
+      "delivery",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7840,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1210,
+    "aspects": [
+      "app_experience",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7790,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6221,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1127,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "cleanliness": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5405,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4959,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2969,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "negative",
+      "price": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2046,
+    "aspects": [
+      "app_experience",
+      "general",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "general": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 830,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5225,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4595,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9505,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 7608,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 894,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 3773,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4332,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5773,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5778,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4647,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5035,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 4948,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2094,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5811,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4166,
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral"
+    }
+  },
+  {
+    "review_id": 2445,
+    "aspects": [
+      "app_experience",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5256,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4629,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7645,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2652,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2826,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2732,
+    "aspects": [
+      "delivery",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1367,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5292,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2624,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 9941,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9381,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7504,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 3837,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 7539,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4414,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7609,
+    "aspects": [
+      "app_experience",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5404,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1713,
+    "aspects": [
+      "app_experience",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6246,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 6415,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 3074,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5108,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9645,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 527,
+    "aspects": [
+      "delivery",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2277,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7307,
+    "aspects": [
+      "food",
+      "general",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "negative",
+      "general": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1487,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 820,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 5417,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 6706,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6269,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 9269,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1139,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2996,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5835,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "negative",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6760,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "cleanliness": "positive",
+      "food": "negative",
+      "price": "positive"
+    }
+  },
+  {
+    "review_id": 8508,
+    "aspects": [
+      "app_experience",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 867,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5509,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3467,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2235,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 8392,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1033,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 4439,
+    "aspects": [
+      "food",
+      "general",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "negative",
+      "general": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6339,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7112,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2775,
+    "aspects": [
+      "app_experience",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3252,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3840,
+    "aspects": [
+      "food",
+      "general",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "negative",
+      "general": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6241,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3209,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2190,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2044,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7392,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 5646,
+    "aspects": [
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4523,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6762,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5381,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "negative",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3407,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8231,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8306,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8292,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8373,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 4627,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5254,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7244,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2012,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2192,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2824,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7454,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1013,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "food": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5935,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 1867,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5900,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9951,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 3961,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5692,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "food": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6312,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 255,
+    "aspects": [
+      "delivery",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 9567,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1969,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5187,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2804,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1921,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5547,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8862,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 5162,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3246,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 9314,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7111,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5398,
+    "aspects": [
+      "delivery",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1310,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 9211,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1006,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 7600,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 9222,
+    "aspects": [
+      "app_experience",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1714,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 6345,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "food": "negative",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9340,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6749,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8609,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7448,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 7106,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 938,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1083,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "food": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6347,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 1963,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1836,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7099,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6038,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "delivery": "negative",
+      "price": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4067,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1539,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "food": "negative",
+      "price": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5202,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 7500,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 418,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3848,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9620,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6545,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2592,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1119,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3173,
+    "aspects": [
+      "delivery",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7974,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2233,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4741,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8362,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "cleanliness": "negative",
+      "food": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1990,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7931,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5690,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7686,
+    "aspects": [
+      "delivery",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 3384,
+    "aspects": [
+      "app_experience",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "positive",
+      "price": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4599,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1300,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2291,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4440,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6363,
+    "aspects": [
+      "app_experience",
+      "general",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "general": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6824,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3185,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5273,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8978,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 6297,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7698,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8957,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1785,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6306,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 8908,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4181,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4183,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7280,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7580,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 725,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8347,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 3225,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4605,
+    "aspects": [
+      "app_experience",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "food": "negative",
+      "price": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4088,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8624,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 9605,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2901,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4316,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 2696,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 785,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2926,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7695,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "negative",
+      "food": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7649,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 8944,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2659,
+    "aspects": [
+      "cleanliness",
+      "food"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "negative",
+      "food": "neutral"
+    }
+  },
+  {
+    "review_id": 2068,
+    "aspects": [
+      "cleanliness",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "negative",
+      "food": "neutral",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2263,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 342,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 412,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1906,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "negative"
+    }
+  },
+  {
+    "review_id": 5505,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1937,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 341,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7304,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 5501,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 3422,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 5845,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "food": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 614,
+    "aspects": [
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 6642,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 3103,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1839,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6483,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 233,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2784,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7841,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8440,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6257,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5616,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "food": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4287,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 1701,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6318,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4786,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5193,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6986,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2609,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8529,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 5958,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1150,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7428,
+    "aspects": [
+      "delivery",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 419,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2095,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2316,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 423,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 8136,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1628,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9094,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 6305,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 5156,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3339,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2072,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6959,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6351,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 9876,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 751,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "cleanliness": "positive",
+      "food": "negative",
+      "price": "positive"
+    }
+  },
+  {
+    "review_id": 5440,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7942,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 675,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3382,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3940,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8972,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "positive",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8452,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8505,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 348,
+    "aspects": [
+      "app_experience",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8395,
+    "aspects": [
+      "food",
+      "general",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "negative",
+      "general": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2076,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7774,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1345,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4779,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "negative"
+    }
+  },
+  {
+    "review_id": 5684,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6320,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9952,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5850,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5588,
+    "aspects": [
+      "app_experience",
+      "general",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "general": "positive",
+      "price": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9688,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 1352,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8358,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4379,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6703,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "food": "negative",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 6903,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 6193,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "negative",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6607,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4437,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1834,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2692,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 9624,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6203,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7943,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3761,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "food": "negative",
+      "price": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1615,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6673,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 3353,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6403,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1391,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2451,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 3411,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4251,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2350,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6842,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9535,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1037,
+    "aspects": [
+      "app_experience",
+      "general",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "general": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4950,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6655,
+    "aspects": [
+      "delivery",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7507,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5443,
+    "aspects": [
+      "app_experience",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "food": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4345,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 453,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4184,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8000,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "food": "positive",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 7393,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4760,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 564,
+    "aspects": [
+      "delivery",
+      "food",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1640,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4164,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2069,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "food": "positive",
+      "price": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3348,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 1346,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3750,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6014,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "cleanliness": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1860,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 2829,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "negative",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7310,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1829,
+    "aspects": [
+      "app_experience",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7103,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2030,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 5176,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8001,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "food": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 9955,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4730,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 1015,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "cleanliness": "negative",
+      "food": "neutral",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 9878,
+    "aspects": [
+      "delivery",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "negative",
+      "food": "positive",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6799,
+    "aspects": [
+      "ambiance",
+      "food",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "food": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5383,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 8873,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 4887,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9984,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3763,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4745,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 8097,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7794,
+    "aspects": [
+      "app_experience",
+      "food",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "food": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 7921,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "positive",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 7702,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "general": "positive",
+      "price": "negative"
+    }
+  },
+  {
+    "review_id": 150,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3522,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7265,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "negative",
+      "app_experience": "negative",
+      "delivery": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6451,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 3181,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4889,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 3693,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 5634,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 9874,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 427,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 7462,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "price": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 2112,
+    "aspects": [
+      "ambiance",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9977,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 4371,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 7684,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 814,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 4065,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "food": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 6460,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "service": "negative"
+    }
+  },
+  {
+    "review_id": 6234,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "cleanliness": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 9593,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "negative",
+      "delivery": "negative",
+      "food": "negative",
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 3686,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "price": "positive",
+      "service": "positive"
+    }
+  },
+  {
+    "review_id": 2120,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "positive",
+      "app_experience": "positive",
+      "cleanliness": "positive",
+      "service": "positive"
+    }
+  }
+]

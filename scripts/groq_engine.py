@@ -17,10 +17,12 @@ from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
 
 import pandas as pd
+from scipy.sparse import hstack
 
 from scripts.config import PROCESSED_DIR, SQLITE_DB_PATH, apply_local_runtime_defaults
 from DataBase.db import get_connection, initialize_database
 from DataBase.mongo_db import log_prediction as mongo_log_prediction, log_run_artifacts
+from scripts.data_cleaning_phase import clean_text
 from scripts.rag_utils import index_is_ready, retrieve_examples
 
 VALID_ASPECTS = {
@@ -41,6 +43,8 @@ DEFAULT_FALLBACK_MODEL = "llama-3.1-8b-instant"
 DEFAULT_VAL_CSV = PROCESSED_DIR / "val_clean.csv"
 DEFAULT_RESULTS_JSON = PROCESSED_DIR / "val_results.json"
 DEFAULT_PREDICTIONS_JSON = PROCESSED_DIR / "val_predictions.json"
+DEFAULT_HIDDEN_TEST_INPUT = Path("Data") / "DeepX_hidden_test .xlsx"
+DEFAULT_HIDDEN_PREDICTIONS_JSON = PROCESSED_DIR / "deepx_hidden_predictions.json"
 
 SYSTEM_PROMPT = """You are an expert in Aspect-Based Sentiment Analysis for Arabic customer reviews.
 
@@ -64,6 +68,26 @@ RULES:
 """
 
 _CLIENT = None
+_GROQ_DISABLED_REASON: Optional[str] = None
+_LOCAL_MODEL_BUNDLE: Optional[List[Tuple[Path, Dict[str, Any]]]] = None
+
+LOCAL_FALLBACK_WEIGHTS: Tuple[Path, ...] = (
+    Path("models") / "local_absa_weights_v3_wide.joblib",
+    Path("models") / "local_absa_weights_v4_meta.joblib",
+    Path("models") / "local_absa_weights_v2.joblib",
+    Path("models") / "local_absa_weights.joblib",
+    Path("models") / "pseudo_labels_weights.joblib",
+)
+LOCAL_FALLBACK_THRESHOLD = 0.55
+LOCAL_FALLBACK_MAX_ASPECTS = 4
+LOCAL_FALLBACK_TOP_GAP = 0.2
+LOCAL_MODEL_WEIGHTS: Dict[str, float] = {
+    "local_absa_weights_v3_wide.joblib": 0.7,
+    "local_absa_weights_v4_meta.joblib": 0.3,
+    "local_absa_weights_v2.joblib": 0.5,
+    "local_absa_weights.joblib": 0.4,
+    "pseudo_labels_weights.joblib": 0.3,
+}
 
 
 class RateLimiter:
@@ -119,6 +143,332 @@ def _info(message: str) -> None:
 
 def _default_prediction() -> Dict[str, Any]:
     return {"predictions": [{"aspect": "general", "sentiment": "neutral"}]}
+
+
+ASPECT_KEYWORDS: Dict[str, Tuple[str, ...]] = {
+    "food": (
+        "اكل",
+        "الأكل",
+        "الاكل",
+        "طعام",
+        "وجبة",
+        "وجبات",
+        "برجر",
+        "بيتزا",
+        "coffee",
+        "burger",
+        "pizza",
+        "food",
+        "meal",
+    ),
+    "service": (
+        "خدمة",
+        "الخدمة",
+        "موظف",
+        "الموظف",
+        "كاشير",
+        "تعامل",
+        "staff",
+        "service",
+        "waiter",
+    ),
+    "price": (
+        "سعر",
+        "السعر",
+        "الاسعار",
+        "الأسعار",
+        "غالي",
+        "رخيص",
+        "discount",
+        "expensive",
+        "cheap",
+        "price",
+        "prices",
+    ),
+    "cleanliness": (
+        "نظيف",
+        "نظافة",
+        "وسخ",
+        "قذر",
+        "dirty",
+        "clean",
+        "hygiene",
+    ),
+    "delivery": (
+        "توصيل",
+        "الدليفري",
+        "دليفري",
+        "طلب",
+        "متأخر",
+        "delivery",
+        "driver",
+        "arrived",
+    ),
+    "ambiance": (
+        "اجواء",
+        "أجواء",
+        "المكان",
+        "جلسة",
+        "موسيقى",
+        "زحمة",
+        "ambiance",
+        "atmosphere",
+        "place",
+        "seating",
+    ),
+    "app_experience": (
+        "تطبيق",
+        "الابلكيشن",
+        "ابلكيشن",
+        "الموقع",
+        "app",
+        "application",
+        "website",
+        "checkout",
+        "payment",
+        "ui",
+    ),
+}
+
+POSITIVE_WORDS: Tuple[str, ...] = (
+    "ممتاز",
+    "رائع",
+    "حلو",
+    "لذيذ",
+    "جيد",
+    "كويس",
+    "جميل",
+    "سريع",
+    "perfect",
+    "great",
+    "good",
+    "excellent",
+    "amazing",
+    "fresh",
+    "love",
+)
+
+NEGATIVE_WORDS: Tuple[str, ...] = (
+    "سيء",
+    "سيئ",
+    "سئ",
+    "رديء",
+    "زفت",
+    "وحش",
+    "بارد",
+    "متأخر",
+    "غالي",
+    "قذر",
+    "وسخ",
+    "bad",
+    "awful",
+    "terrible",
+    "cold",
+    "late",
+    "slow",
+    "expensive",
+    "worst",
+    "hate",
+)
+
+NEGATION_WORDS: Tuple[str, ...] = ("مو", "مش", "ليس", "ما", "not", "no", "never")
+
+
+def _contains_any(text: str, terms: Sequence[str]) -> bool:
+    return any(term in text for term in terms)
+
+
+def _sentiment_score(text: str) -> int:
+    score = 0
+    tokens = text.split()
+    for idx, token in enumerate(tokens):
+        is_pos = any(word in token for word in POSITIVE_WORDS)
+        is_neg = any(word in token for word in NEGATIVE_WORDS)
+        if not is_pos and not is_neg:
+            continue
+        window_start = max(0, idx - 2)
+        window = tokens[window_start:idx]
+        negated = any(neg in w for w in window for neg in NEGATION_WORDS)
+        if is_pos:
+            score += -1 if negated else 1
+        if is_neg:
+            score += 1 if negated else -1
+    return score
+
+
+def _heuristic_prediction(review_text: str) -> Dict[str, Any]:
+    text = str(review_text or "").strip().lower()
+    if not text:
+        return _default_prediction()
+
+    predictions: List[Dict[str, str]] = []
+    for aspect, keywords in ASPECT_KEYWORDS.items():
+        if not _contains_any(text, keywords):
+            continue
+
+        score = _sentiment_score(text)
+        if score > 0:
+            sentiment = "positive"
+        elif score < 0:
+            sentiment = "negative"
+        else:
+            sentiment = "neutral"
+
+        predictions.append({"aspect": aspect, "sentiment": sentiment})
+
+    if not predictions:
+        score = _sentiment_score(text)
+        if score > 0:
+            sentiment = "positive"
+        elif score < 0:
+            sentiment = "negative"
+        else:
+            sentiment = "neutral"
+        predictions = [{"aspect": "general", "sentiment": sentiment}]
+
+    return validate_prediction({"predictions": predictions})
+
+
+def _load_local_model_bundle() -> Optional[Dict[str, Any]]:
+    global _LOCAL_MODEL_BUNDLE
+    if _LOCAL_MODEL_BUNDLE is not None:
+        return _LOCAL_MODEL_BUNDLE
+
+    try:
+        import joblib  # type: ignore
+    except Exception:
+        _LOCAL_MODEL_BUNDLE = []
+        return None
+
+    loaded_bundles: List[Tuple[Path, Dict[str, Any]]] = []
+    for path in LOCAL_FALLBACK_WEIGHTS:
+        if not path.exists():
+            continue
+        try:
+            bundle = joblib.load(path)
+            if not isinstance(bundle, dict):
+                continue
+            _info(f"Loaded local fallback weights from {path}")
+            loaded_bundles.append((path, bundle))
+        except Exception as exc:
+            _warn(f"Failed to load local weights from {path}: {exc}")
+
+    _LOCAL_MODEL_BUNDLE = loaded_bundles
+    return _LOCAL_MODEL_BUNDLE if _LOCAL_MODEL_BUNDLE else None
+
+
+def _local_model_prediction(review_text: str, row_data: Optional[Dict[str, Any]] = None) -> Optional[Dict[str, Any]]:
+    text = str(review_text or "").strip()
+    if not text:
+        return _default_prediction()
+
+    bundles = _load_local_model_bundle()
+    if not bundles:
+        return None
+
+    try:
+        score_maps: List[Tuple[float, Dict[str, float]]] = []
+
+        for source_path, local_bundle in bundles:
+            model_weight = LOCAL_MODEL_WEIGHTS.get(source_path.name, 0.5)
+            if "pipeline" in local_bundle and "label_binarizer" in local_bundle:
+                pipeline = local_bundle["pipeline"]
+                mlb = local_bundle["label_binarizer"]
+                proba = pipeline.predict_proba([text])[0]
+                classes = [str(x) for x in mlb.classes_]
+            elif {"text_vectorizer", "meta_encoder", "classifier", "label_binarizer"}.issubset(local_bundle.keys()):
+                meta_row = row_data or {}
+                feature_frame = pd.DataFrame([
+                    {
+                        "review_clean": text,
+                        "business_category": str(meta_row.get("business_category", "") or ""),
+                        "platform": str(meta_row.get("platform", "") or ""),
+                        "star_rating": str(meta_row.get("star_rating", "") or ""),
+                        "is_arabizi": str(meta_row.get("is_arabizi", "") or ""),
+                    }
+                ])
+                text_vec = local_bundle["text_vectorizer"].transform(feature_frame["review_clean"].tolist())
+                meta_enc = local_bundle["meta_encoder"].transform(feature_frame[["business_category", "platform", "star_rating", "is_arabizi"]])
+                proba = local_bundle["classifier"].predict_proba(hstack([text_vec, meta_enc]))[0]
+                classes = [str(x) for x in local_bundle["label_binarizer"].classes_]
+            elif {"vectorizer", "classifier", "label_binarizer"}.issubset(local_bundle.keys()):
+                vectorizer = local_bundle["vectorizer"]
+                classifier = local_bundle["classifier"]
+                mlb = local_bundle["label_binarizer"]
+                proba = classifier.predict_proba(vectorizer.transform([text]))[0]
+                classes = [str(x) for x in mlb.classes_]
+            else:
+                continue
+
+            score_maps.append((model_weight, {str(classes[i]): float(proba[i]) for i in range(len(classes))}))
+
+        if not score_maps:
+            return None
+
+        combined_scores: Dict[str, float] = {}
+        total_weight = sum(weight for weight, _ in score_maps) or 1.0
+        for weight, score_map in score_maps:
+            for label, score in score_map.items():
+                combined_scores[label] = combined_scores.get(label, 0.0) + (weight * score)
+        for label in list(combined_scores.keys()):
+            combined_scores[label] /= total_weight
+
+        by_aspect: Dict[str, Tuple[str, float]] = {}
+        for label, score in combined_scores.items():
+            if "|" not in label:
+                continue
+            if score < LOCAL_FALLBACK_THRESHOLD:
+                continue
+
+            aspect, sentiment = label.split("|", 1)
+            aspect = aspect.strip().lower()
+            sentiment = sentiment.strip().lower()
+            if aspect not in VALID_ASPECTS or sentiment not in VALID_SENTIMENTS:
+                continue
+
+            prev = by_aspect.get(aspect)
+            if prev is None or score > prev[1]:
+                by_aspect[aspect] = (sentiment, score)
+
+        ranked = sorted(
+            ((a, sp[0], sp[1]) for a, sp in by_aspect.items()),
+            key=lambda item: item[2],
+            reverse=True,
+        )
+        predictions = [
+            {"aspect": aspect, "sentiment": sentiment}
+            for aspect, sentiment, _ in ranked[:LOCAL_FALLBACK_MAX_ASPECTS]
+        ]
+
+        if not predictions and combined_scores:
+            best_label = max(combined_scores.items(), key=lambda item: item[1])[0]
+            if "|" in best_label:
+                aspect, sentiment = best_label.split("|", 1)
+                aspect = aspect.strip().lower()
+                sentiment = sentiment.strip().lower()
+                if aspect in VALID_ASPECTS and sentiment in VALID_SENTIMENTS:
+                    predictions = [{"aspect": aspect, "sentiment": sentiment}]
+
+        if not predictions:
+            return _default_prediction()
+
+        if ranked:
+            top_score = ranked[0][2]
+            filtered = [item for item in ranked if item[2] >= top_score - LOCAL_FALLBACK_TOP_GAP][:LOCAL_FALLBACK_MAX_ASPECTS]
+            if filtered:
+                predictions = [{"aspect": a, "sentiment": s} for a, s, _ in filtered]
+
+        return validate_prediction({"predictions": predictions})
+    except Exception as exc:
+        _warn(f"Local fallback model inference failed: {exc}")
+        return None
+
+
+def _smart_fallback_prediction(review_text: str, row_data: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    model_prediction = _local_model_prediction(review_text, row_data=row_data)
+    if model_prediction is not None:
+        return model_prediction
+    return _heuristic_prediction(review_text)
 
 
 def _parse_json_cell(value: Any) -> Any:
@@ -377,13 +727,22 @@ def _call_groq(
     fallback_model: str,
     limiter: RateLimiter,
 ) -> Tuple[Dict[str, Any], str, str, float]:
+    global _GROQ_DISABLED_REASON
+    if _GROQ_DISABLED_REASON:
+        raise RuntimeError(_GROQ_DISABLED_REASON)
+    if not str(primary_model).strip() and not str(fallback_model).strip():
+        raise RuntimeError("No Groq models configured.")
+
     client = _get_client()
     user_prompt = build_prompt(review=review, rag_shots=rag_shots, max_distance=max_distance)
 
     last_error = ""
+    quota_failures = 0
+    model_attempts = 0
     for model_name in (primary_model, fallback_model):
         if not model_name:
             continue
+        model_attempts += 1
         try:
             limiter.acquire()
             start = time.perf_counter()
@@ -405,6 +764,13 @@ def _call_groq(
         except Exception as exc:
             last_error = str(exc)
             _warn(f"Model {model_name} failed: {exc}")
+            lowered = last_error.lower()
+            if "rate_limit_exceeded" in lowered and ("tokens per day" in lowered or "tpd" in lowered):
+                quota_failures += 1
+
+    if model_attempts > 0 and quota_failures >= model_attempts:
+        _GROQ_DISABLED_REASON = "Groq daily token quota reached; using fallback predictions for remaining rows."
+        _warn(_GROQ_DISABLED_REASON)
 
     raise RuntimeError(f"All model attempts failed. Last error: {last_error}")
 
@@ -449,7 +815,7 @@ def predict(
         )
         return output
     except Exception as exc:
-        fallback = _default_prediction()
+        fallback = _smart_fallback_prediction(text)
         _log_prediction(
             review_text=text,
             prediction=fallback,
@@ -474,15 +840,72 @@ def _prediction_pairs(prediction: Dict[str, Any]) -> List[Tuple[str, str]]:
     return sorted(set(pairs))
 
 
-def _to_submission_row(review_id: str, prediction: Dict[str, Any]) -> Dict[str, Any]:
+def _normalize_review_id(value: Any) -> Any:
+    """Keep numeric IDs numeric; otherwise return a trimmed string ID."""
+
+    if value is None:
+        return ""
+    if isinstance(value, int):
+        return value
+    if isinstance(value, float):
+        return int(value) if value.is_integer() else str(value)
+
+    text = str(value).strip()
+    if not text:
+        return ""
+    if re.fullmatch(r"\d+", text):
+        try:
+            return int(text)
+        except Exception:
+            return text
+    return text
+
+
+def _to_submission_row(review_id: Any, prediction: Dict[str, Any]) -> Dict[str, Any]:
     pairs = _prediction_pairs(prediction)
     aspects = [aspect for aspect, _ in pairs]
     aspect_sentiments = {aspect: sentiment for aspect, sentiment in pairs}
     return {
-        "review_id": review_id,
+        "review_id": _normalize_review_id(review_id),
         "aspects": aspects,
         "aspect_sentiments": aspect_sentiments,
     }
+
+
+def _normalize_submission_rows(rows: Sequence[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """Guarantee submission rows use the expected schema and valid label values only."""
+
+    normalized: List[Dict[str, Any]] = []
+    for row in rows:
+        review_id = _normalize_review_id(row.get("review_id"))
+
+        raw_map = row.get("aspect_sentiments", {})
+        if not isinstance(raw_map, dict):
+            raw_map = {}
+
+        cleaned_pairs: List[Tuple[str, str]] = []
+        for aspect, sentiment in raw_map.items():
+            aspect_name = str(aspect).strip().lower()
+            sentiment_name = str(sentiment).strip().lower()
+            if aspect_name in VALID_ASPECTS and sentiment_name in VALID_SENTIMENTS:
+                cleaned_pairs.append((aspect_name, sentiment_name))
+
+        if not cleaned_pairs:
+            cleaned_pairs = [("general", "neutral")]
+
+        cleaned_pairs = sorted(set(cleaned_pairs))
+        aspects = [a for a, _ in cleaned_pairs]
+        sentiment_map = {a: s for a, s in cleaned_pairs}
+
+        normalized.append(
+            {
+                "review_id": review_id,
+                "aspects": aspects,
+                "aspect_sentiments": sentiment_map,
+            }
+        )
+
+    return normalized
 
 
 def _all_labels() -> List[str]:
@@ -539,6 +962,57 @@ def _iter_validation_rows(val_csv: Path | str, max_rows: Optional[int]) -> Itera
         yield row
 
 
+def _read_prediction_input_rows(input_path: Path | str, max_rows: Optional[int]) -> pd.DataFrame:
+    path = Path(input_path)
+    if not path.exists():
+        raise FileNotFoundError(f"Prediction input file not found: {path}")
+
+    # Guard against accidentally downloaded HTML pages saved with .xlsx extension.
+    with path.open("rb") as file:
+        head = file.read(512).lstrip().lower()
+    if head.startswith(b"<!doctype html") or head.startswith(b"<html"):
+        raise ValueError(
+            f"Input file is HTML, not a dataset: {path}. Please provide the real hidden-test CSV/XLSX file."
+        )
+
+    suffix = path.suffix.lower()
+    if suffix in {".xlsx", ".xls"}:
+        frame = pd.read_excel(path, engine="openpyxl")
+    else:
+        frame = pd.read_csv(path, encoding="utf-8-sig")
+
+    if max_rows is not None:
+        frame = frame.head(max(1, int(max_rows))).copy()
+
+    if "review_id" not in frame.columns:
+        frame["review_id"] = [str(i + 1) for i in range(len(frame))]
+    else:
+        frame["review_id"] = frame["review_id"].fillna("").astype(str).str.strip()
+        missing_mask = frame["review_id"] == ""
+        if missing_mask.any():
+            frame.loc[missing_mask, "review_id"] = [str(i + 1) for i in frame.index[missing_mask]]
+
+    if "review_text" in frame.columns:
+        source_col = "review_text"
+    elif "text" in frame.columns:
+        source_col = "text"
+    elif "review_clean" in frame.columns:
+        source_col = "review_clean"
+    else:
+        raise ValueError("Input file must contain one of: review_text, text, review_clean")
+
+    frame[source_col] = frame[source_col].fillna("").astype(str)
+    frame["review_clean"] = frame[source_col].map(clean_text)
+    for extra_col in ["business_category", "platform", "star_rating", "is_arabizi", "business_name", "date"]:
+        if extra_col not in frame.columns:
+            frame[extra_col] = ""
+        else:
+            frame[extra_col] = frame[extra_col].fillna("").astype(str)
+    # Keep all input rows (including blank/fully-cleaned reviews) so submission row count stays aligned.
+    frame = frame.reset_index(drop=True)
+    return frame
+
+
 def batch_predict(
     reviews: Sequence[str],
     rag_shots: int = 3,
@@ -571,7 +1045,7 @@ def run_validation(
     val_csv: Path | str = DEFAULT_VAL_CSV,
     output_json: Path | str = DEFAULT_RESULTS_JSON,
     predictions_json: Path | str = DEFAULT_PREDICTIONS_JSON,
-    max_rows: int = 500,
+    max_rows: Optional[int] = 500,
     rag_shots: int = 3,
     max_distance: float = 0.7,
     primary_model: str = DEFAULT_PRIMARY_MODEL,
@@ -619,7 +1093,7 @@ def run_validation(
         except Exception as exc:
             error_text = str(exc)
             parse_status = "fallback"
-            prediction = _default_prediction()
+            prediction = _smart_fallback_prediction(review_text)
 
         if parse_status == "fallback":
             fallback_count += 1
@@ -665,6 +1139,8 @@ def run_validation(
     with output_json.open("w", encoding="utf-8") as file:
         json.dump(results, file, ensure_ascii=False, indent=2)
 
+    prediction_rows = _normalize_submission_rows(prediction_rows)
+
     with predictions_json.open("w", encoding="utf-8") as file:
         json.dump(prediction_rows, file, ensure_ascii=False, indent=2)
 
@@ -679,19 +1155,130 @@ def run_validation(
     return results
 
 
+def run_hidden_test_predictions(
+    input_path: Path | str = DEFAULT_HIDDEN_TEST_INPUT,
+    predictions_json: Path | str = DEFAULT_HIDDEN_PREDICTIONS_JSON,
+    max_rows: Optional[int] = None,
+    rag_shots: int = 3,
+    max_distance: float = 0.7,
+    primary_model: str = DEFAULT_PRIMARY_MODEL,
+    fallback_model: str = DEFAULT_FALLBACK_MODEL,
+    disable_groq: bool = False,
+) -> Dict[str, Any]:
+    """Run cleaned hidden-test predictions and write submission-ready JSON rows."""
+
+    limiter = RateLimiter()
+    predictions_json = Path(predictions_json)
+    predictions_json.parent.mkdir(parents=True, exist_ok=True)
+
+    frame = _read_prediction_input_rows(input_path=input_path, max_rows=max_rows)
+    total = len(frame)
+    if max_rows is not None:
+        _warn(
+            "Hidden-test export is row-limited. Use --rows 0 (or omit --rows) for leaderboard submission."
+        )
+    _info(f"Running hidden-test prediction on {total} rows from {input_path}...")
+
+    prediction_rows: List[Dict[str, Any]] = []
+    fallback_count = 0
+
+    for idx, row in enumerate(frame.itertuples(index=False), start=1):
+        review_id = str(getattr(row, "review_id", idx))
+        review_text = str(getattr(row, "review_clean", "") or "").strip()
+        row_data = getattr(row, "_asdict", lambda: {})()
+
+        raw = ""
+        parse_status = "fallback"
+        model_used = ""
+        latency_ms = 0.0
+        prediction = _default_prediction()
+        error_text = ""
+
+        if disable_groq:
+            parse_status = "fallback"
+            prediction = _smart_fallback_prediction(review_text, row_data=row_data)
+        elif not review_text:
+            parse_status = "fallback"
+            prediction = _default_prediction()
+        else:
+            try:
+                prediction, raw, status_token, latency_ms = _call_groq(
+                    review=review_text,
+                    rag_shots=rag_shots,
+                    max_distance=max_distance,
+                    primary_model=primary_model,
+                    fallback_model=fallback_model,
+                    limiter=limiter,
+                )
+                model_used, parse_status = status_token.split("|", 1)
+            except Exception as exc:
+                error_text = str(exc)
+                parse_status = "fallback"
+                prediction = _smart_fallback_prediction(review_text, row_data=row_data)
+
+        if parse_status == "fallback":
+            fallback_count += 1
+
+        _log_prediction(
+            review_text=review_text,
+            prediction=prediction,
+            raw_response=raw,
+            parse_status=parse_status,
+            model_name=model_used,
+            latency_ms=latency_ms,
+            error_text=error_text,
+        )
+
+        prediction_rows.append(_to_submission_row(review_id, prediction))
+
+        if idx == 1 or idx % 10 == 0 or idx == total:
+            _info(f"hidden prediction progress: {idx}/{total}")
+
+    prediction_rows = _normalize_submission_rows(prediction_rows)
+
+    with predictions_json.open("w", encoding="utf-8") as file:
+        json.dump(prediction_rows, file, ensure_ascii=False, indent=2)
+
+    parse_failure_rate = (fallback_count / total) if total else 1.0
+    summary = {
+        "timestamp_utc": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+        "rows_predicted": total,
+        "rag_shots": int(rag_shots),
+        "max_distance": float(max_distance),
+        "primary_model": primary_model,
+        "fallback_model": fallback_model,
+        "parse_failure_rate": round(parse_failure_rate, 6),
+        "predictions_json": str(predictions_json),
+    }
+    _info(f"Saved hidden-test predictions to {predictions_json}")
+    return summary
+
+
 def _build_arg_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Phase 3 Groq ABSA inference engine")
+    parser.add_argument(
+        "--mode",
+        choices=["hidden", "validation"],
+        default="hidden",
+        help="Run hidden-test prediction export or validation evaluation",
+    )
     parser.add_argument("--review", default=None, help="Single review text to predict")
-    parser.add_argument("--val-csv", default=str(DEFAULT_VAL_CSV), help="Validation CSV path")
-    parser.add_argument("--rows", type=int, default=500, help="Rows for validation run")
+    parser.add_argument("--input", default=str(DEFAULT_HIDDEN_TEST_INPUT), help="Hidden test input (.xlsx/.csv) path")
+    parser.add_argument("--val-csv", default=str(DEFAULT_VAL_CSV), help="Validation CSV path (validation mode)")
+    parser.add_argument("--rows", type=int, default=0, help="Rows to process (0 means all rows)")
     parser.add_argument("--rag-shots", type=int, default=3, help="RAG few-shot examples count")
     parser.add_argument("--max-distance", type=float, default=0.7, help="RAG distance threshold")
     parser.add_argument("--model", default=DEFAULT_PRIMARY_MODEL, help="Primary Groq model")
     parser.add_argument("--fallback-model", default=DEFAULT_FALLBACK_MODEL, help="Fallback Groq model")
-    parser.add_argument("--output", default=str(DEFAULT_RESULTS_JSON), help="Validation summary JSON output")
+    parser.add_argument(
+        "--disable-groq",
+        action="store_true",
+        help="Skip Groq API calls and emit fallback predictions only",
+    )
+    parser.add_argument("--output", default=str(DEFAULT_RESULTS_JSON), help="Validation summary JSON output (validation mode)")
     parser.add_argument(
         "--predictions-output",
-        default=str(DEFAULT_PREDICTIONS_JSON),
+        default=str(DEFAULT_HIDDEN_PREDICTIONS_JSON),
         help="Per-row predictions JSON output",
     )
     return parser
@@ -699,6 +1286,7 @@ def _build_arg_parser() -> argparse.ArgumentParser:
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     args = _build_arg_parser().parse_args(argv)
+    row_limit: Optional[int] = None if int(args.rows) <= 0 else int(args.rows)
 
     if args.review:
         result = predict(
@@ -711,16 +1299,29 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         print(json.dumps(result, ensure_ascii=False, indent=2), flush=True)
         return 0
 
-    summary = run_validation(
-        val_csv=Path(args.val_csv),
-        output_json=Path(args.output),
-        predictions_json=Path(args.predictions_output),
-        max_rows=max(1, int(args.rows)),
-        rag_shots=max(0, int(args.rag_shots)),
-        max_distance=float(args.max_distance),
-        primary_model=str(args.model),
-        fallback_model=str(args.fallback_model),
-    )
+    if args.mode == "validation":
+        summary = run_validation(
+            val_csv=Path(args.val_csv),
+            output_json=Path(args.output),
+            predictions_json=Path(args.predictions_output),
+            max_rows=row_limit,
+            rag_shots=max(0, int(args.rag_shots)),
+            max_distance=float(args.max_distance),
+            primary_model=str(args.model),
+            fallback_model=str(args.fallback_model),
+        )
+    else:
+        summary = run_hidden_test_predictions(
+            input_path=Path(args.input),
+            predictions_json=Path(args.predictions_output),
+            max_rows=row_limit,
+            rag_shots=max(0, int(args.rag_shots)),
+            max_distance=float(args.max_distance),
+            primary_model=str(args.model),
+            fallback_model=str(args.fallback_model),
+            disable_groq=bool(args.disable_groq),
+        )
+
     print(json.dumps(summary, ensure_ascii=False, indent=2), flush=True)
     return 0
 
