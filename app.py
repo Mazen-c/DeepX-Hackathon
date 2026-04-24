@@ -52,23 +52,19 @@ def _app() -> None:
     m2.metric("Avg Latency (ms)", f"{metrics.get('avg_latency_ms', 0):.2f}")
     m3.metric("Parse Success Rate", f"{metrics.get('parse_success_rate', 0) * 100:.1f}%")
 
-    if "_review_text" not in st.session_state:
-        st.session_state["_review_text"] = ""
+    if "review_input_widget" not in st.session_state:
+        st.session_state["review_input_widget"] = ""
 
     cols = st.columns(len(DEMOS))
     for idx, demo in enumerate(DEMOS):
         if cols[idx].button(f"Demo {idx + 1}"):
-            st.session_state["_review_text"] = demo
-            st.rerun()
+            st.session_state["review_input_widget"] = demo
 
     review_input = st.text_area(
         "Enter Arabic review:",
-        value=st.session_state["_review_text"],
         height=120,
         key="review_input_widget",
     )
-    # Sync typed value back to backing state so it persists across reruns
-    st.session_state["_review_text"] = review_input
 
     if st.button("Analyze", type="primary"):
         review = review_input.strip()

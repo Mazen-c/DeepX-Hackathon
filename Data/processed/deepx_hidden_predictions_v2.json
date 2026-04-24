@@ -1,0 +1,4724 @@
+[
+  {
+    "review_id": 23,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 25,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 65,
+    "aspects": [
+      "ambiance",
+      "app_experience",
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "neutral",
+      "app_experience": "neutral",
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 107,
+    "aspects": [
+      "none"
+    ],
+    "aspect_sentiments": {
+      "none": "neutral"
+    }
+  },
+  {
+    "review_id": 162,
+    "aspects": [
+      "delivery",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 198,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 246,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 251,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 276,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 280,
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral"
+    }
+  },
+  {
+    "review_id": 314,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 336,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 338,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 352,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 379,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 386,
+    "aspects": [
+      "delivery",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 398,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 401,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 405,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 446,
+    "aspects": [
+      "app_experience",
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 496,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 530,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 538,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 540,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 646,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 650,
+    "aspects": [
+      "none"
+    ],
+    "aspect_sentiments": {
+      "none": "neutral"
+    }
+  },
+  {
+    "review_id": 671,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 678,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 746,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 886,
+    "aspects": [
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 895,
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 942,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 964,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 975,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "delivery": "positive",
+      "general": "neutral",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 1020,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 1029,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1110,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1173,
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1191,
+    "aspects": [
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 1202,
+    "aspects": [
+      "cleanliness",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 1261,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1272,
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1279,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1312,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1347,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1353,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 1355,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 1398,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1404,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1440,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1476,
+    "aspects": [
+      "delivery",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1481,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1498,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 1501,
+    "aspects": [
+      "delivery",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1506,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 1548,
+    "aspects": [
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 1573,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1577,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 1578,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1626,
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1641,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 1780,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 1786,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1789,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 1794,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1835,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 1854,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 1859,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1869,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1875,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 1884,
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral"
+    }
+  },
+  {
+    "review_id": 1908,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 1910,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1919,
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1920,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1933,
+    "aspects": [
+      "cleanliness",
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "negative",
+      "food": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1961,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 1983,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2001,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2011,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 2036,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2042,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 2064,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2071,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2119,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 2121,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2161,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 2186,
+    "aspects": [
+      "cleanliness",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 2193,
+    "aspects": [
+      "ambiance",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "neutral",
+      "general": "neutral"
+    }
+  },
+  {
+    "review_id": 2202,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "neutral"
+    }
+  },
+  {
+    "review_id": 2221,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 2223,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 2232,
+    "aspects": [
+      "none"
+    ],
+    "aspect_sentiments": {
+      "none": "neutral"
+    }
+  },
+  {
+    "review_id": 2236,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2238,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2307,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 2309,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 2324,
+    "aspects": [
+      "app_experience",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "neutral"
+    }
+  },
+  {
+    "review_id": 2347,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2358,
+    "aspects": [
+      "app_experience",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "negative",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 2360,
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral"
+    }
+  },
+  {
+    "review_id": 2426,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 2477,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "neutral"
+    }
+  },
+  {
+    "review_id": 2488,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 2497,
+    "aspects": [
+      "app_experience",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2500,
+    "aspects": [
+      "app_experience",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2524,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2536,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 2538,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 2567,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2576,
+    "aspects": [
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 2580,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2585,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2612,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2676,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2689,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 2695,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 2770,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2778,
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2792,
+    "aspects": [
+      "delivery",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2834,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2851,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 2875,
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2879,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 2889,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 2892,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "negative"
+    }
+  },
+  {
+    "review_id": 2938,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 2952,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 2972,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2984,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 2985,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "neutral"
+    }
+  },
+  {
+    "review_id": 3003,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 3031,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3045,
+    "aspects": [
+      "ambiance"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "neutral"
+    }
+  },
+  {
+    "review_id": 3053,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 3076,
+    "aspects": [
+      "none"
+    ],
+    "aspect_sentiments": {
+      "none": "neutral"
+    }
+  },
+  {
+    "review_id": 3081,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 3133,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 3206,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 3263,
+    "aspects": [
+      "food",
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral",
+      "general": "neutral",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 3288,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 3294,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3301,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3355,
+    "aspects": [
+      "none"
+    ],
+    "aspect_sentiments": {
+      "none": "neutral"
+    }
+  },
+  {
+    "review_id": 3437,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 3439,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 3476,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3477,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3500,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 3507,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 3555,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "neutral"
+    }
+  },
+  {
+    "review_id": 3557,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 3575,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 3576,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3578,
+    "aspects": [
+      "ambiance",
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "neutral",
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3588,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 3635,
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral"
+    }
+  },
+  {
+    "review_id": 3651,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 3658,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 3659,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 3660,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3663,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 3672,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3689,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3702,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3703,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3710,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 3742,
+    "aspects": [
+      "ambiance",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 3767,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "negative"
+    }
+  },
+  {
+    "review_id": 3951,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 3963,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4064,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 4074,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 4098,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 4129,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 4163,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 4170,
+    "aspects": [
+      "ambiance",
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "neutral",
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 4174,
+    "aspects": [
+      "app_experience",
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "delivery": "neutral"
+    }
+  },
+  {
+    "review_id": 4248,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 4270,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4273,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4304,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4344,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 4348,
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral"
+    }
+  },
+  {
+    "review_id": 4359,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 4361,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 4383,
+    "aspects": [
+      "ambiance",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "neutral",
+      "general": "neutral"
+    }
+  },
+  {
+    "review_id": 4398,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 4411,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4430,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 4431,
+    "aspects": [
+      "delivery",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4442,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4451,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 4456,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4514,
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4539,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 4544,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 4569,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4572,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 4615,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 4637,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 4660,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 4680,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 4689,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 4697,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 4746,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4753,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 4781,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 4809,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4831,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 4893,
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4894,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 4918,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 4921,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 4939,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 4953,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 4984,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 4990,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 5036,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 5051,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 5052,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5120,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5121,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 5143,
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral"
+    }
+  },
+  {
+    "review_id": 5166,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5177,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 5190,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 5237,
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5241,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 5247,
+    "aspects": [
+      "ambiance"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "neutral"
+    }
+  },
+  {
+    "review_id": 5249,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 5252,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5268,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 5272,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "neutral"
+    }
+  },
+  {
+    "review_id": 5275,
+    "aspects": [
+      "delivery",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5277,
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral"
+    }
+  },
+  {
+    "review_id": 5333,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5335,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 5391,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5409,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 5421,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5426,
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral"
+    }
+  },
+  {
+    "review_id": 5442,
+    "aspects": [
+      "ambiance",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5454,
+    "aspects": [
+      "ambiance"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "neutral"
+    }
+  },
+  {
+    "review_id": 5461,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5475,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 5479,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 5496,
+    "aspects": [
+      "general",
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5508,
+    "aspects": [
+      "delivery",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5524,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5526,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5528,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5539,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 5550,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 5575,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5602,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5603,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 5604,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 5622,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5651,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 5685,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5697,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 5700,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5704,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 5706,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5760,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5792,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 5799,
+    "aspects": [
+      "price",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5803,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 5851,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 5858,
+    "aspects": [
+      "app_experience",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 5863,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5923,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 5969,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 5977,
+    "aspects": [
+      "app_experience",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 5986,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6006,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 6037,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6047,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6058,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6060,
+    "aspects": [
+      "ambiance",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "neutral",
+      "general": "neutral"
+    }
+  },
+  {
+    "review_id": 6078,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "negative"
+    }
+  },
+  {
+    "review_id": 6083,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "negative"
+    }
+  },
+  {
+    "review_id": 6089,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6091,
+    "aspects": [
+      "none"
+    ],
+    "aspect_sentiments": {
+      "none": "neutral"
+    }
+  },
+  {
+    "review_id": 6092,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6109,
+    "aspects": [
+      "food",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6112,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 6140,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "neutral"
+    }
+  },
+  {
+    "review_id": 6148,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 6216,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6220,
+    "aspects": [
+      "cleanliness",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 6222,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 6235,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 6275,
+    "aspects": [
+      "app_experience",
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 6281,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "negative"
+    }
+  },
+  {
+    "review_id": 6288,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6313,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6315,
+    "aspects": [
+      "app_experience",
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 6326,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6343,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6381,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6400,
+    "aspects": [
+      "none"
+    ],
+    "aspect_sentiments": {
+      "none": "neutral"
+    }
+  },
+  {
+    "review_id": 6416,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 6448,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 6450,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6463,
+    "aspects": [
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 6464,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6471,
+    "aspects": [
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 6505,
+    "aspects": [
+      "app_experience",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 6514,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6521,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6534,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6539,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6548,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6578,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6582,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6587,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6590,
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral"
+    }
+  },
+  {
+    "review_id": 6609,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6610,
+    "aspects": [
+      "app_experience",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6639,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6659,
+    "aspects": [
+      "none"
+    ],
+    "aspect_sentiments": {
+      "none": "neutral"
+    }
+  },
+  {
+    "review_id": 6675,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6699,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6715,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6771,
+    "aspects": [
+      "app_experience",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 6774,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6781,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6791,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 6794,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6836,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6837,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6841,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 6884,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6889,
+    "aspects": [
+      "app_experience",
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 6890,
+    "aspects": [
+      "app_experience",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 6918,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 6945,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 6951,
+    "aspects": [
+      "ambiance"
+    ],
+    "aspect_sentiments": {
+      "ambiance": "neutral"
+    }
+  },
+  {
+    "review_id": 6980,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 7014,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7043,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 7072,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7079,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7091,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7100,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7107,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7116,
+    "aspects": [
+      "app_experience",
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7125,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7174,
+    "aspects": [
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 7229,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 7231,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7248,
+    "aspects": [
+      "cleanliness",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 7262,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 7298,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7404,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7447,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7450,
+    "aspects": [
+      "app_experience",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 7456,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7566,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7586,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7587,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7595,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7606,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "neutral"
+    }
+  },
+  {
+    "review_id": 7653,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7679,
+    "aspects": [
+      "app_experience",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 7682,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 7690,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7691,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7719,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7720,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7741,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 7749,
+    "aspects": [
+      "delivery",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 7759,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7819,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7847,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 7859,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7866,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7870,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 7872,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7881,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 7883,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 7888,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7889,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7908,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 7922,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 7960,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 7965,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8019,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8028,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8075,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 8091,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8109,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8115,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8117,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8144,
+    "aspects": [
+      "food"
+    ],
+    "aspect_sentiments": {
+      "food": "neutral"
+    }
+  },
+  {
+    "review_id": 8173,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8217,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8232,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8236,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8244,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8256,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8262,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8269,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8283,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 8287,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8330,
+    "aspects": [
+      "app_experience",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8336,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8354,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8367,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8375,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8416,
+    "aspects": [
+      "app_experience",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8418,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 8424,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8433,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8434,
+    "aspects": [
+      "app_experience",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8444,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8447,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8453,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8504,
+    "aspects": [
+      "app_experience",
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 8524,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 8535,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8537,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8541,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8545,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8574,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8607,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8632,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8638,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8665,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8670,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8720,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 8773,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8798,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8799,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8806,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8830,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8851,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8857,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8860,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8886,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 8888,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 8901,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8929,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 8941,
+    "aspects": [
+      "none"
+    ],
+    "aspect_sentiments": {
+      "none": "neutral"
+    }
+  },
+  {
+    "review_id": 8965,
+    "aspects": [
+      "none"
+    ],
+    "aspect_sentiments": {
+      "none": "neutral"
+    }
+  },
+  {
+    "review_id": 8977,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 9012,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 9023,
+    "aspects": [
+      "none"
+    ],
+    "aspect_sentiments": {
+      "none": "neutral"
+    }
+  },
+  {
+    "review_id": 9043,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9056,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9059,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9066,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9079,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 9096,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9097,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9098,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "positive"
+    }
+  },
+  {
+    "review_id": 9148,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9187,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9210,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 9242,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "negative"
+    }
+  },
+  {
+    "review_id": 9251,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9261,
+    "aspects": [
+      "app_experience",
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "cleanliness": "negative"
+    }
+  },
+  {
+    "review_id": 9331,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 9334,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 9390,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9414,
+    "aspects": [
+      "app_experience",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 9422,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9433,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 9437,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9438,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9445,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 9469,
+    "aspects": [
+      "app_experience",
+      "delivery",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "delivery": "positive",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 9477,
+    "aspects": [
+      "general",
+      "service"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 9491,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9507,
+    "aspects": [
+      "app_experience",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 9516,
+    "aspects": [
+      "app_experience",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 9528,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 9533,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 9541,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9557,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 9563,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9573,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 9635,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 9697,
+    "aspects": [
+      "cleanliness"
+    ],
+    "aspect_sentiments": {
+      "cleanliness": "neutral"
+    }
+  },
+  {
+    "review_id": 9776,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9781,
+    "aspects": [
+      "general"
+    ],
+    "aspect_sentiments": {
+      "general": "negative"
+    }
+  },
+  {
+    "review_id": 9809,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9830,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9880,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9883,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 9904,
+    "aspects": [
+      "price"
+    ],
+    "aspect_sentiments": {
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 9932,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9944,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 9947,
+    "aspects": [
+      "general",
+      "price"
+    ],
+    "aspect_sentiments": {
+      "general": "negative",
+      "price": "neutral"
+    }
+  },
+  {
+    "review_id": 9979,
+    "aspects": [
+      "delivery"
+    ],
+    "aspect_sentiments": {
+      "delivery": "positive"
+    }
+  },
+  {
+    "review_id": 9993,
+    "aspects": [
+      "app_experience"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral"
+    }
+  },
+  {
+    "review_id": 10006,
+    "aspects": [
+      "service"
+    ],
+    "aspect_sentiments": {
+      "service": "neutral"
+    }
+  },
+  {
+    "review_id": 10013,
+    "aspects": [
+      "app_experience",
+      "general"
+    ],
+    "aspect_sentiments": {
+      "app_experience": "neutral",
+      "general": "negative"
+    }
+  }
+]
