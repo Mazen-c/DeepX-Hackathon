@@ -21,8 +21,9 @@ RATE_LIMIT_SLEEP = 2.1       # seconds between every Groq API call
 BACK_TRANSLATE_SAMPLE = 20   # existing reviews to back-translate per run
 GROQ_MODEL = "openai/gpt-oss-120b"
 
-INPUT_PATH = Path("data/processed/train_clean.csv")
-OUTPUT_PATH = Path("data/processed/train_augmented.csv")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+INPUT_PATH = PROJECT_ROOT / "Data/processed/train_clean.csv"
+OUTPUT_PATH = PROJECT_ROOT / "Data/processed/train_augmented.csv"
 
 # ── text normalisation ────────────────────────────────────────────────────────
 _ARABIC_DIACRITICS_RE = re.compile(r"[ؗ-ًؚ-ْ]")
@@ -360,7 +361,7 @@ def main() -> None:
 
     # ── save output ───────────────────────────────────────────────────────────
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    augmented_df.to_csv(OUTPUT_PATH, index=False, encoding="utf-8-sig")
+    augmented_df.to_csv(OUTPUT_PATH, index=False, encoding="utf-8")
     print(f"\nSaved augmented dataset -> {OUTPUT_PATH}", flush=True)
 
     print_distribution(augmented_df, "AFTER augmentation")
