@@ -20,7 +20,6 @@ Desktop.ini
 *.err
 
 # Environment and secrets
-.env
 .env.*
 !.env.example
 !.env.sample
