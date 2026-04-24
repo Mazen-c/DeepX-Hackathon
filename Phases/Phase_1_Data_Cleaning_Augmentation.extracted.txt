@@ -1,0 +1,77 @@
+﻿Phase 1  ·  Hours 0 – 2   Local Data Cleaning & Lightweight Augmentation
+Constraints active: Zero cost  ·  Low bandwidth  ·  Groq Free API  ·  Local compute only
+PRIMARY DELIVERABLE
+Two committed CSV files: train_clean.csv and train_augmented.csv. All cleaning and augmentation runs entirely on local CPU using pip-installed libraries. Zero API calls, zero downloads beyond pip packages. Augmented minority classes (neutral, delivery, cleanliness) each have at least 2x their original count.
+
+TASK DELEGATION
+Person A · Cleaning pipeline
+pip install pyarabic pandas — both are tiny, fast installs.
+Normalize Alef variants: re.sub(r'[أإآ]', 'ا', text)
+Normalize Taa Marbouta: re.sub(r'ة', 'ه', text)
+Strip Tashkeel: araby.strip_tashkeel(text)
+Strip Tatweel: araby.strip_tatweel(text)
+Reduce repeat chars: re.sub(r'([\u0600-\u06FF])\1{2,}', r'\1', text)
+Emoji-to-Arabic dict: hardcode top 25 emoji (no library needed).
+Output: train_clean.csv, val_clean.csv, test_clean.csv.
+Person B · Augmentation pipeline
+Count class distribution: train_clean.groupby(['aspect','sentiment']).size()
+Identify all (aspect, sentiment) pairs where count < 100.
+Use Groq free API (llama-3-70b-8192) to generate 30 synthetic examples per deficient pair.
+Batch requests: 5 examples per call to stay under token limits.
+Back-translation via Helsinki-NLP/opus-mt-ar-en (48MB) + opus-mt-en-ar (48MB) — download these two only.
+Output: train_augmented.csv with class distribution printed to console.
+
+GROQ AUGMENTATION — RATE LIMIT STRATEGY
+Groq free tier limits: 30 requests/min, 14,400 requests/day, 6,000 tokens/request. Budget your calls before writing a single line.
+
+# Estimate calls needed FIRST
+deficient_pairs = df.groupby(['aspect','sentiment']).filter(lambda x: len(x) < 100)
+n_pairs = deficient_pairs[['aspect','sentiment']].drop_duplicates().shape[0]
+calls_needed = n_pairs * 6   # 6 calls x 5 examples = 30 per pair
+print(f'Calls needed: {calls_needed} / 14400 daily limit')
+
+import time, os
+from groq import Groq
+client = Groq(api_key=os.environ['GROQ_API_KEY'])
+
+def gen_batch(aspect, sentiment, n=5):
+    prompt = f'''Generate {n} short Arabic restaurant reviews where
+    the ONLY aspect mentioned is {aspect} with {sentiment} sentiment.
+    Return ONLY a JSON array of strings. No preamble.'''
+    resp = client.chat.completions.create(
+        model='llama-3-70b-8192',
+        messages=[{'role':'user','content':prompt}],
+        temperature=0.9, max_tokens=400
+    )
+    time.sleep(2.1)   # Stay under 30 req/min hard cap
+    return json.loads(resp.choices[0].message.content)
+
+BANDWIDTH / COMPUTE MITIGATION
+Zero large downloads rule — enforced
+pyarabic: ~15KB. pandas: ~12MB. Both standard pip installs.
+Helsinki-NLP back-translation models: 48MB each x2 = 96MB total. ONE-TIME download, cache locally. Do NOT re-download.
+If back-translation models fail to download: skip back-translation entirely. Groq synthetics alone are sufficient.
+No Docker, no MongoDB, no HuggingFace model hub pulls beyond the two Helsinki models.
+All cleaning runs locally on CPU in under 60 seconds for 5K rows.
+
+MINIMUM VIABLE CHECKPOINT
+GATE — must pass before Phase 2
+len(train_clean) == len(train_original). No rows dropped during cleaning.
+train_augmented.csv exists. neutral, delivery, cleanliness each have > 200 examples.
+No NaN values in review_clean, aspect, or sentiment columns.
+assert set(train_augmented['aspect'].unique()) == {'food','service','price','cleanliness','delivery','ambiance','app_experience','general','none'}
+
+FAILURE MITIGATIONS
+MITIGATION · Groq rate limit hit during augmentation
+Add time.sleep(2.1) between every call — enforces 28 req/min safely.
+If daily limit hit: switch to HuggingFace Free Inference API with mistralai/Mistral-7B-Instruct-v0.2.
+Nuclear: skip augmentation. Use compute_class_weight('balanced') in Phase 3 prompt weighting instead.
+
+MITIGATION · Back-translation download fails on slow connection
+Skip it. Groq synthetic generation covers the same augmentation goal.
+Back-translation is additive, not required. Remove it from the pipeline without touching any other code.
+
+HARD RULES
+Commit both CSV files to the repo before Person B starts Phase 2 embedding. Never embed un-cleaned data.
+Print class distribution after augmentation. If any pair is still < 80 examples, run one more augmentation pass before moving on.
+All Groq API keys go in .env and are loaded via python-dotenv. Never hardcode keys in scripts.

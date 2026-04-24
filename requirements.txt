@@ -1,0 +1,7 @@
+pandas>=2.2.0
+numpy>=2.0.0
+matplotlib>=3.10.0
+pyarabic>=0.6.15
+python-dotenv>=1.0.1
+groq>=0.18.0
+ipykernel>=7.0.0
