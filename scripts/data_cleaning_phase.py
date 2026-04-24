@@ -120,6 +120,22 @@ def read_csv_rows(path: Path) -> List[Dict[str, str]]:
     raise RuntimeError(f"Could not decode CSV file {path}. Last error: {last_error}")
 
 
+def read_xlsx_rows(path: Path) -> List[Dict[str, str]]:
+    try:
+        import pandas as pd  # type: ignore
+    except ImportError:
+        raise RuntimeError("pandas is required to read .xlsx files: pip install pandas openpyxl")
+    df = pd.read_excel(path, dtype=str).fillna("")
+    return df.to_dict(orient="records")
+
+
+def read_input_file(path: Path) -> List[Dict[str, str]]:
+    """Dispatch to the correct reader based on file extension."""
+    if path.suffix.lower() in {".xlsx", ".xls"}:
+        return read_xlsx_rows(path)
+    return read_csv_rows(path)
+
+
 def safe_json_load(raw: str, expected: type):
     if raw is None:
         return expected()
@@ -474,10 +490,10 @@ def run_quality_gates(train_original_rows: int, train_clean: List[Dict[str, str]
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Phase 1 data cleaning and augmentation pipeline.")
-    parser.add_argument("--train", default="Data/train_fixed(Sheet1).csv")
-    parser.add_argument("--validation", default="Data/validation_fixed(Sheet1).csv")
-    parser.add_argument("--test", default="Data/unlabeled_fixed(Sheet1).csv")
-    parser.add_argument("--output-dir", default="Data/processed")
+    parser.add_argument("--train", default="data/DeepX_train.xlsx")
+    parser.add_argument("--validation", default="data/DeepX_validation.xlsx")
+    parser.add_argument("--test", default="data/DeepX_unlabeled.xlsx")
+    parser.add_argument("--output-dir", default="data/processed")
     parser.add_argument("--use-groq", action="store_true")
     parser.add_argument("--batch-size", type=int, default=5)
     parser.add_argument("--per-pair-generate", type=int, default=30)
@@ -493,9 +509,9 @@ def main():
     test_path = resolve_project_path(args.test, project_root)
     out_dir = resolve_project_path(args.output_dir, project_root)
 
-    train_rows = read_csv_rows(train_path)
-    val_rows = read_csv_rows(val_path)
-    test_rows = read_csv_rows(test_path)
+    train_rows = read_input_file(train_path)
+    val_rows = read_input_file(val_path)
+    test_rows = read_input_file(test_path)
 
     train_clean_wide = to_wide_clean_rows(train_rows)
     val_clean_wide = to_wide_clean_rows(val_rows)

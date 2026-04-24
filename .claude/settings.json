@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pip install openpyxl --target /c/Users/Ahmed/AppData/Local/Programs/Python/Python310/Lib/site-packages/)",
+      "Bash(python -c ' *)",
+      "Bash(python scripts/02_augment_data.py)"
+    ]
+  }
+}
