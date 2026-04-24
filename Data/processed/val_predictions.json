@@ -11,10 +11,12 @@
   {
     "review_id": "8612",
     "aspects": [
-      "general"
+      "food",
+      "service"
     ],
     "aspect_sentiments": {
-      "general": "negative"
+      "food": "negative",
+      "service": "negative"
     }
   },
   {
@@ -59,7 +61,7 @@
       "food"
     ],
     "aspect_sentiments": {
-      "food": "negative"
+      "food": "positive"
     }
   },
   {
@@ -87,12 +89,10 @@
   {
     "review_id": "7814",
     "aspects": [
-      "food",
-      "service"
+      "general"
     ],
     "aspect_sentiments": {
-      "food": "positive",
-      "service": "positive"
+      "general": "positive"
     }
   },
   {
@@ -161,11 +161,11 @@
     "review_id": "3871",
     "aspects": [
       "food",
-      "general"
+      "price"
     ],
     "aspect_sentiments": {
       "food": "positive",
-      "general": "positive"
+      "price": "positive"
     }
   },
   {
@@ -182,10 +182,10 @@
   {
     "review_id": "9442",
     "aspects": [
-      "ambiance"
+      "service"
     ],
     "aspect_sentiments": {
-      "ambiance": "positive"
+      "service": "negative"
     }
   },
   {

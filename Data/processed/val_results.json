@@ -1,12 +1,12 @@
 {
-  "timestamp_utc": "2026-04-24T12:44:47Z",
+  "timestamp_utc": "2026-04-24T16:31:30Z",
   "rows_evaluated": 20,
   "rag_shots": 3,
   "max_distance": 0.7,
   "primary_model": "llama-3.3-70b-versatile",
   "fallback_model": "llama-3.1-8b-instant",
   "parse_failure_rate": 0.0,
-  "f1_micro": 0.09375,
+  "f1_micro": 0.125,
   "per_class_f1": {
     "ambiance|negative": 0.0,
     "ambiance|neutral": 0.0,
@@ -22,7 +22,7 @@
     "delivery|positive": 0.0,
     "food|negative": 0.0,
     "food|neutral": 0.0,
-    "food|positive": 0.133333,
+    "food|positive": 0.266667,
     "general|negative": 0.0,
     "general|neutral": 0.0,
     "general|positive": 0.0,
@@ -34,6 +34,6 @@
     "price|positive": 0.0,
     "service|negative": 0.0,
     "service|neutral": 0.0,
-    "service|positive": 0.2
+    "service|positive": 0.222222
   }
 }
