@@ -1,15 +1,15 @@
 {
   "phase": "phase_1_data_cleaning_augmentation",
   "inputs": {
-    "train": "C:\\Users\\Ahmed\\Desktop\\Projects\\DeepX-Hackathon\\data\\DeepX_train.xlsx",
-    "validation": "C:\\Users\\Ahmed\\Desktop\\Projects\\DeepX-Hackathon\\data\\DeepX_validation.xlsx",
-    "test": "C:\\Users\\Ahmed\\Desktop\\Projects\\DeepX-Hackathon\\data\\DeepX_unlabeled.xlsx"
+    "train": "C:\\DeepX Hackathon\\Data\\train_fixed(Sheet1).csv",
+    "validation": "C:\\DeepX Hackathon\\Data\\validation_fixed(Sheet1).csv",
+    "test": "C:\\DeepX Hackathon\\Data\\unlabeled_fixed(Sheet1).csv"
   },
   "outputs": {
-    "train_clean": "C:\\Users\\Ahmed\\Desktop\\Projects\\DeepX-Hackathon\\data\\processed\\train_clean.csv",
-    "val_clean": "C:\\Users\\Ahmed\\Desktop\\Projects\\DeepX-Hackathon\\data\\processed\\val_clean.csv",
-    "test_clean": "C:\\Users\\Ahmed\\Desktop\\Projects\\DeepX-Hackathon\\data\\processed\\test_clean.csv",
-    "train_augmented": "C:\\Users\\Ahmed\\Desktop\\Projects\\DeepX-Hackathon\\data\\processed\\train_augmented.csv"
+    "train_clean": "C:\\DeepX Hackathon\\Data\\processed\\train_clean.csv",
+    "val_clean": "C:\\DeepX Hackathon\\Data\\processed\\val_clean.csv",
+    "test_clean": "C:\\DeepX Hackathon\\Data\\processed\\test_clean.csv",
+    "train_augmented": "C:\\DeepX Hackathon\\Data\\processed\\train_augmented.csv"
   },
   "summary": {
     "augmented_rows": 4177,
@@ -43,6 +43,6 @@
     "price|positive": 110,
     "service|negative": 449,
     "service|neutral": 80,
-    "service|positive": 529
+  "service|positive": 529
   }
 }
