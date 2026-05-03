@@ -170,13 +170,13 @@ python scripts/groq_engine.py --review "sample Arabic review text"
 Local-only, no Groq API calls:
 
 ```bash
-python scripts/groq_engine.py --mode hidden --disable-groq --input "Data/DeepX_hidden_test .xlsx" --predictions-output Data/processed/deepx_hidden_predictions.json
+python scripts/groq_engine.py --mode hidden --disable-groq --input "path/to/hidden_test.xlsx" --predictions-output Data/processed/deepx_hidden_predictions.json
 ```
 
 Groq + RAG enabled:
 
 ```bash
-python scripts/groq_engine.py --mode hidden --input "Data/DeepX_hidden_test .xlsx" --predictions-output Data/processed/deepx_hidden_predictions.json
+python scripts/groq_engine.py --mode hidden --input "path/to/hidden_test.xlsx" --predictions-output Data/processed/deepx_hidden_predictions.json
 ```
 
 ### Run validation
@@ -284,6 +284,7 @@ The Groq rate limiter is set to 28 requests per minute and 14,400 requests per d
 - The README previously listed Phase 1 scripts that are not present in this workspace. The processed CSV artifacts are present under `Data/processed/`.
 - `scripts/data_pipeline.py` is currently an empty placeholder.
 - The checked-in UI and model path target `models/local_absa_weights_v3_wide.joblib`.
+- `scikit-learn` is pinned to `1.7.2` because the checked-in `.joblib` model was trained with that version.
 
 ## License
 
