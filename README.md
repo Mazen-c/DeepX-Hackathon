@@ -19,7 +19,7 @@ The app takes an Arabic review, extracts one or more aspect-sentiment pairs, ret
 }
 ```
 
-- SQLite logging in `absa_phase2.db`
+- SQLite logging in `absa_phase2.db`.
 - MongoDB logging in `arabic_absa.predictions`
 - Dashboard metrics for prediction count, latency, parse success, and aspect distribution
 - Data cleaning, augmentation, validation, and hidden-test prediction scripts
