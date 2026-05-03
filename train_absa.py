@@ -1,9 +1,10 @@
 """Train a production-ready local multi-label ABSA model.
 
-Expected input CSV defaults to Data/processed/train_augmented.csv.
+Expected input CSV defaults to Data/processed/train_augmented_wide.csv.
 The script supports either:
 1) Wide format: columns [text, labels]
-2) Long format fallback: columns [review_id, review_clean/review_text, aspect, sentiment]
+2) Hackathon wide format: columns [review_clean/review_text, aspect_sentiments]
+3) Long format fallback: columns [review_id, review_clean/review_text, aspect, sentiment]
 
 Usage:
     python train_absa.py
@@ -56,7 +57,7 @@ CLASSES: List[str] = [
 ]
 
 
-def load_data(csv_path: Path | str = "Data/processed/train_augmented.csv") -> pd.DataFrame:
+def load_data(csv_path: Path | str = "Data/processed/train_augmented_wide.csv") -> pd.DataFrame:
     """Load input CSV and validate minimum required structure."""
 
     path = Path(csv_path)
@@ -67,14 +68,16 @@ def load_data(csv_path: Path | str = "Data/processed/train_augmented.csv") -> pd
     print(f"[INFO] Loaded data from {path} with shape={df.shape}", flush=True)
 
     columns = set(df.columns)
-    has_wide = {"text", "labels"}.issubset(columns)
+    has_label_wide = {"text", "labels"}.issubset(columns)
+    has_absa_wide = "aspect_sentiments" in columns and ("review_clean" in columns or "review_text" in columns)
     has_long = {"aspect", "sentiment"}.issubset(columns) and (
         "review_clean" in columns or "review_text" in columns
     )
 
-    if not has_wide and not has_long:
+    if not has_label_wide and not has_absa_wide and not has_long:
         raise ValueError(
-            "Expected either columns ['text', 'labels'] or long-format columns including "
+            "Expected columns ['text', 'labels'], wide ABSA columns including "
+            "['aspect_sentiments', 'review_clean/review_text'], or long-format columns including "
             "['aspect', 'sentiment', 'review_clean/review_text']"
         )
     return df
@@ -116,6 +119,34 @@ def _parse_labels_value(raw: object) -> List[str]:
     return [x for x in tokens if x]
 
 
+def _parse_jsonish_value(raw: object) -> object:
+    """Parse JSON/literal cells emitted by the cleaning pipeline."""
+
+    if raw is None or pd.isna(raw):
+        return None
+
+    value = str(raw).strip()
+    if not value:
+        return None
+
+    try:
+        return ast.literal_eval(value)
+    except (ValueError, SyntaxError):
+        return None
+
+
+def _labels_from_aspect_sentiments(raw: object) -> List[str]:
+    parsed = _parse_jsonish_value(raw)
+    labels: List[str] = []
+    if isinstance(parsed, dict):
+        for aspect, sentiment in parsed.items():
+            aspect_text = str(aspect).strip().lower()
+            sentiment_text = str(sentiment).strip().lower()
+            if aspect_text and sentiment_text:
+                labels.append(f"{aspect_text}|{sentiment_text}")
+    return labels
+
+
 def preprocess(df: pd.DataFrame, allowed_classes: Sequence[str] = CLASSES) -> Tuple[List[str], List[List[str]]]:
     """Clean texts and convert target labels into a multi-label list per sample."""
 
@@ -126,6 +157,12 @@ def preprocess(df: pd.DataFrame, allowed_classes: Sequence[str] = CLASSES) -> Tu
         work = df[["text", "labels"]].copy()
         work["text"] = work["text"].map(_clean_text)
         work["labels"] = work["labels"].map(_parse_labels_value)
+    elif "aspect_sentiments" in columns and ("review_clean" in columns or "review_text" in columns):
+        text_col = "review_clean" if "review_clean" in columns else "review_text"
+        work = df[[text_col, "aspect_sentiments"]].copy()
+        work = work.rename(columns={text_col: "text"})
+        work["text"] = work["text"].map(_clean_text)
+        work["labels"] = work["aspect_sentiments"].map(_labels_from_aspect_sentiments)
     else:
         # Fallback for long-format rows: one aspect/sentiment per row.
         text_col = "review_clean" if "review_clean" in columns else "review_text"
@@ -276,8 +313,8 @@ def save_model(model_bundle: Dict[str, object], output_path: Path | str = "model
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Train multi-label ABSA model and save local weights.")
-    parser.add_argument("--input", default="Data/processed/train_augmented.csv", help="Input CSV path")
-    parser.add_argument("--output", default="models/local_absa_weights.joblib", help="Output .joblib file path")
+    parser.add_argument("--input", default="Data/processed/train_augmented_wide.csv", help="Input CSV path")
+    parser.add_argument("--output", default="models/local_absa_weights_v3_wide.joblib", help="Output .joblib file path")
     args = parser.parse_args()
 
     df = load_data(args.input)

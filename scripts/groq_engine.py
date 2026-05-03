@@ -73,20 +73,12 @@ _LOCAL_MODEL_BUNDLE: Optional[List[Tuple[Path, Dict[str, Any]]]] = None
 
 LOCAL_FALLBACK_WEIGHTS: Tuple[Path, ...] = (
     Path("models") / "local_absa_weights_v3_wide.joblib",
-    Path("models") / "local_absa_weights_v4_meta.joblib",
-    Path("models") / "local_absa_weights_v2.joblib",
-    Path("models") / "local_absa_weights.joblib",
-    Path("models") / "pseudo_labels_weights.joblib",
 )
 LOCAL_FALLBACK_THRESHOLD = 0.55
 LOCAL_FALLBACK_MAX_ASPECTS = 4
 LOCAL_FALLBACK_TOP_GAP = 0.2
 LOCAL_MODEL_WEIGHTS: Dict[str, float] = {
-    "local_absa_weights_v3_wide.joblib": 0.7,
-    "local_absa_weights_v4_meta.joblib": 0.3,
-    "local_absa_weights_v2.joblib": 0.5,
-    "local_absa_weights.joblib": 0.4,
-    "pseudo_labels_weights.joblib": 0.3,
+    "local_absa_weights_v3_wide.joblib": 1.0,
 }
 
 
@@ -371,33 +363,37 @@ def _local_model_prediction(review_text: str, row_data: Optional[Dict[str, Any]]
 
         for source_path, local_bundle in bundles:
             model_weight = LOCAL_MODEL_WEIGHTS.get(source_path.name, 0.5)
-            if "pipeline" in local_bundle and "label_binarizer" in local_bundle:
-                pipeline = local_bundle["pipeline"]
-                mlb = local_bundle["label_binarizer"]
-                proba = pipeline.predict_proba([text])[0]
-                classes = [str(x) for x in mlb.classes_]
-            elif {"text_vectorizer", "meta_encoder", "classifier", "label_binarizer"}.issubset(local_bundle.keys()):
-                meta_row = row_data or {}
-                feature_frame = pd.DataFrame([
-                    {
-                        "review_clean": text,
-                        "business_category": str(meta_row.get("business_category", "") or ""),
-                        "platform": str(meta_row.get("platform", "") or ""),
-                        "star_rating": str(meta_row.get("star_rating", "") or ""),
-                        "is_arabizi": str(meta_row.get("is_arabizi", "") or ""),
-                    }
-                ])
-                text_vec = local_bundle["text_vectorizer"].transform(feature_frame["review_clean"].tolist())
-                meta_enc = local_bundle["meta_encoder"].transform(feature_frame[["business_category", "platform", "star_rating", "is_arabizi"]])
-                proba = local_bundle["classifier"].predict_proba(hstack([text_vec, meta_enc]))[0]
-                classes = [str(x) for x in local_bundle["label_binarizer"].classes_]
-            elif {"vectorizer", "classifier", "label_binarizer"}.issubset(local_bundle.keys()):
-                vectorizer = local_bundle["vectorizer"]
-                classifier = local_bundle["classifier"]
-                mlb = local_bundle["label_binarizer"]
-                proba = classifier.predict_proba(vectorizer.transform([text]))[0]
-                classes = [str(x) for x in mlb.classes_]
-            else:
+            try:
+                if "pipeline" in local_bundle and "label_binarizer" in local_bundle:
+                    pipeline = local_bundle["pipeline"]
+                    mlb = local_bundle["label_binarizer"]
+                    proba = pipeline.predict_proba([text])[0]
+                    classes = [str(x) for x in mlb.classes_]
+                elif {"text_vectorizer", "meta_encoder", "classifier", "label_binarizer"}.issubset(local_bundle.keys()):
+                    meta_row = row_data or {}
+                    feature_frame = pd.DataFrame([
+                        {
+                            "review_clean": text,
+                            "business_category": str(meta_row.get("business_category", "") or ""),
+                            "platform": str(meta_row.get("platform", "") or ""),
+                            "star_rating": str(meta_row.get("star_rating", "") or ""),
+                            "is_arabizi": str(meta_row.get("is_arabizi", "") or ""),
+                        }
+                    ])
+                    text_vec = local_bundle["text_vectorizer"].transform(feature_frame["review_clean"].tolist())
+                    meta_enc = local_bundle["meta_encoder"].transform(feature_frame[["business_category", "platform", "star_rating", "is_arabizi"]])
+                    proba = local_bundle["classifier"].predict_proba(hstack([text_vec, meta_enc]))[0]
+                    classes = [str(x) for x in local_bundle["label_binarizer"].classes_]
+                elif {"vectorizer", "classifier", "label_binarizer"}.issubset(local_bundle.keys()):
+                    vectorizer = local_bundle["vectorizer"]
+                    classifier = local_bundle["classifier"]
+                    mlb = local_bundle["label_binarizer"]
+                    proba = classifier.predict_proba(vectorizer.transform([text]))[0]
+                    classes = [str(x) for x in mlb.classes_]
+                else:
+                    continue
+            except Exception as exc:
+                _warn(f"Skipping local weights {source_path}: {exc}")
                 continue
 
             score_maps.append((model_weight, {str(classes[i]): float(proba[i]) for i in range(len(classes))}))
@@ -826,6 +822,39 @@ def predict(
             error_text=str(exc),
         )
         return fallback
+
+
+def predict_local(review: str, row_data: Optional[Dict[str, Any]] = None, log: bool = True) -> Dict[str, Any]:
+    """Predict with the CPU-friendly local model first and optionally log it.
+
+    The web UI uses this path so hackathon demos are fast, free, and based on
+    the augmented training data rather than a remote LLM call.
+    """
+
+    text = str(review or "").strip()
+    if not text:
+        return _default_prediction()
+
+    start = time.perf_counter()
+    output = _smart_fallback_prediction(text, row_data=row_data)
+    latency_ms = (time.perf_counter() - start) * 1000.0
+
+    bundles = _load_local_model_bundle() or []
+    model_name = "heuristic_fallback"
+    if bundles:
+        model_name = "+".join(path.name for path, _ in bundles)
+
+    if log:
+        _log_prediction(
+            review_text=text,
+            prediction=output,
+            raw_response="",
+            parse_status="local",
+            model_name=model_name,
+            latency_ms=latency_ms,
+        )
+
+    return output
 
 
 def _prediction_pairs(prediction: Dict[str, Any]) -> List[Tuple[str, str]]:

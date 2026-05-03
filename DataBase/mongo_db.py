@@ -9,16 +9,38 @@ from typing import Any, Dict, List
 
 import pandas as pd
 
-MONGO_URI = os.environ.get("MONGO_URI", "mongodb://localhost:27017/")
-MONGO_DB = os.environ.get("MONGO_DB", "arabic_absa")
+try:
+    from dotenv import load_dotenv
+except ImportError:  # pragma: no cover - dependency is optional for DB fallback
+    load_dotenv = None
+
+
+if load_dotenv is not None:
+    load_dotenv()
+
+
+def _env_value(name: str, default: str) -> str:
+    """Read .env settings defensively, including accidental spaced keys."""
+
+    return str(os.environ.get(name) or os.environ.get(f"{name} ") or default).strip()
+
+
+def get_mongo_settings() -> Dict[str, str]:
+    """Return the active MongoDB connection settings without exposing secrets."""
+
+    return {
+        "uri": _env_value("MONGO_URI", "mongodb://localhost:27017/"),
+        "database": _env_value("MONGO_DB", "arabic_absa"),
+    }
 
 
 def _get_collection(name: str):
     from pymongo import MongoClient  # type: ignore
 
-    client = MongoClient(MONGO_URI, serverSelectionTimeoutMS=2000)
+    settings = get_mongo_settings()
+    client = MongoClient(settings["uri"], serverSelectionTimeoutMS=2000)
     client.admin.command("ping")
-    db = client[MONGO_DB]
+    db = client[settings["database"]]
     return client, db[name]
 
 
@@ -33,7 +55,8 @@ def init_db() -> bool:
         runs.create_index("created_at")
         client.close()
         return True
-    except Exception:
+    except Exception as exc:
+        print(f"[WARN] MongoDB init failed: {type(exc).__name__}: {exc}", flush=True)
         return False
 
 
@@ -63,7 +86,8 @@ def log_prediction(
         predictions.insert_one(doc)
         client.close()
         return True
-    except Exception:
+    except Exception as exc:
+        print(f"[WARN] MongoDB prediction log failed: {type(exc).__name__}: {exc}", flush=True)
         return False
 
 
