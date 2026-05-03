@@ -1,308 +1,290 @@
-# 🔍 DeepX Hackathon — Arabic ABSA System
+# DeepX Hackathon - Arabic ABSA System
 
-> **Aspect-Based Sentiment Analysis for Arabic Customer Reviews**  
-> Extract structured, multi-aspect sentiment from Arabic text — zero cost, CPU-only, production-ready.
+Aspect-Based Sentiment Analysis (ABSA) for Arabic customer reviews. The system extracts one or more aspect/sentiment pairs from each review and returns a strict JSON-compatible schema.
 
----
+This repository is designed for the hackathon constraints:
 
-## 📌 Overview
+- Zero financial cost: no paid APIs.
+- CPU-only local development.
+- Low bandwidth: no model downloads above 500 MB.
+- Secrets loaded from `.env`; API keys are never hardcoded.
 
-This project is an end-to-end **Aspect-Based Sentiment Analysis (ABSA)** pipeline built for the DeepX Hackathon. Given an Arabic customer review, the system identifies every mentioned aspect and classifies the sentiment toward each one, returning a strict JSON response.
+## Current Architecture
 
-**Example Input:**
-```
-الطعام كان ممتازا لكن الخدمة بطيئة جدا
-```
+The current runnable system has four main layers:
 
-**Example Output:**
-```json
-{
-  "predictions": [
-    { "aspect": "food",    "sentiment": "positive" },
-    { "aspect": "service", "sentiment": "negative" }
-  ]
-}
-```
-
----
-
-## ⚡ Key Constraints
-
-| Constraint | Requirement |
-|---|---|
-| 💸 Cost | Zero — Groq free tier only, no paid APIs |
-| 💻 Compute | CPU-only, no GPU assumed |
-| 📦 Bandwidth | Models ≤ 500 MB |
-| 🔑 API Keys | Via `.env` only — never hardcoded |
-
----
-
-## 🏗️ Architecture
-
-The system is organized into **5 sequential phases**:
-
-```
-Raw CSV Data
-     │
-     ▼
-┌─────────────────────────────┐
-│  Phase 1: Data Cleaning &   │  ← pyarabic, pandas, Groq (augmentation)
-│           Augmentation      │
-└────────────┬────────────────┘
-             │
-             ▼
-┌─────────────────────────────┐
-│  Phase 2: Vector Store /    │  ← ChromaDB + multilingual MiniLM
-│           RAG Index         │
-└────────────┬────────────────┘
-             │
-             ▼
-┌─────────────────────────────┐
-│  Phase 3: Groq LLM Engine   │  ← llama-3.3-70b → llama-3.1-8b → local fallback
-└────────────┬────────────────┘
-             │
-             ▼
-┌─────────────────────────────┐
-│  Phase 4: Streamlit         │  ← Real-time dashboard + MongoDB logging
-│           Dashboard         │
-└────────────┬────────────────┘
-             │
-             ▼
-┌─────────────────────────────┐
-│  Phase 5: Evaluation &      │  ← Hidden test predictions + submission JSON
-│           Submission        │
-└─────────────────────────────┘
+```text
+Data/processed CSV artifacts
+        |
+        v
+Local model training
+train_absa.py
+TF-IDF char n-grams + OneVsRest Logistic Regression
+        |
+        v
+models/local_absa_weights_v3_wide.joblib
+        |
+        v
+Inference layer
+scripts/groq_engine.py
+local model -> heuristic fallback
+optional Groq + optional RAG for batch prediction
+        |
+        v
+Custom web dashboard
+app.py
+SQLite logging + optional MongoDB mirror
 ```
 
----
+### What Each Layer Does
 
-## 📁 Repository Structure
+| Layer | Files | Purpose |
+|---|---|---|
+| Processed data | `Data/processed/*.csv` | Cleaned, augmented, validation, and prediction artifacts used by training and evaluation. |
+| Text cleaning | `scripts/data_cleaning_phase.py` | Lightweight `clean_text` helper used by inference and hidden-test export. |
+| Local model | `train_absa.py`, `models/local_absa_weights_v3_wide.joblib` | CPU-friendly multi-label classifier for aspect/sentiment labels. |
+| RAG index | `scripts/rag_utils.py`, `chroma_store/` | Optional ChromaDB retrieval of similar labeled examples for Groq prompting. |
+| Inference | `scripts/groq_engine.py` | Validates JSON output, runs Groq when enabled, falls back to local/heuristic predictions. |
+| Web UI | `app.py` | Custom HTTP dashboard, not Streamlit. Uses `predict_local()` for fast free demos. |
+| Databases | `DataBase/db.py`, `DataBase/mongo_db.py` | SQLite is local/default. MongoDB is optional for mirrored prediction logs. |
 
+## Repository Structure
+
+```text
+DeepX Hackathon/
+|-- app.py                         # Custom local web dashboard
+|-- train_absa.py                  # Main local model trainer
+|-- requirements.txt               # Python dependencies
+|-- AGENTS.md                      # Project rules and constraints
+|-- README.md
+|
+|-- scripts/
+|   |-- config.py                  # Shared paths and environment defaults
+|   |-- data_cleaning_phase.py     # Shared clean_text helper
+|   |-- groq_engine.py             # Inference, validation, hidden-test export
+|   |-- rag_utils.py               # ChromaDB build/retrieval utilities
+|   |-- rebuild_training_long.py   # Rebuild long training CSV from wide CSV
+|   |-- train_local_weights.py     # Lightweight long-format trainer
+|   |-- train_on_predictions.py    # Pseudo-label training helper
+|   |-- run_ui.bat / run_ui.ps1    # UI launch helpers
+|   `-- run_ui_detached.py         # Detached UI launcher
+|
+|-- Data/
+|   `-- processed/
+|       |-- train_augmented_wide.csv
+|       |-- train_augmented.csv
+|       |-- train_clean.csv
+|       |-- val_clean.csv
+|       |-- val_results*.json
+|       `-- deepx_hidden_predictions*.json
+|
+|-- models/
+|   |-- local_absa_weights_v3_wide.joblib
+|   `-- local_absa_weights_v3_wide.meta.json
+|
+|-- DataBase/
+|   |-- db.py                      # SQLite helpers
+|   `-- mongo_db.py                # Optional MongoDB helpers
+|
+|-- chroma_store/                  # Persisted ChromaDB vector store
+|-- Notebook/                      # Exploration notebook
+|-- phases/                        # Phase documentation
+`-- PRPs/                          # Planning docs
 ```
-DeepX-Hackathon/
-├── app.py                          # Phase 4 — Streamlit dashboard entry point
-├── train_absa.py                   # Production multi-label ABSA model trainer
-├── requirements.txt                # Python dependencies
-├── CLAUDE.md                       # Project rules & constraints for AI assistance
-│
-├── scripts/
-│   ├── config.py                   # Centralized workspace path configuration
-│   ├── groq_engine.py              # Phase 3 — Groq LLM inference + fallback logic
-│   ├── rag_utils.py                # Phase 2 — ChromaDB indexing & retrieval
-│   ├── train_local_weights.py      # Lightweight TF-IDF + OvR classifier trainer
-│   ├── train_on_predictions.py     # Semi-supervised pseudo-label training
-│   └── data_pipeline.py           # (Phase 1 data pipeline)
-│
-├── DataBase/
-│   ├── db.py                       # SQLite helpers (retrieval cache, app state)
-│   └── mongo_db.py                 # MongoDB helpers (prediction logging, metrics)
-│
-├── Data/
-│   ├── DeepX_hidden_test.xlsx      # Competition hidden test set
-│   └── processed/                  # Cleaned & augmented CSVs (generated)
-│
-├── Notebook/
-│   └── Data-exploring.ipynb        # Exploratory data analysis
-│
-├── PRPs/
-│   ├── PHASE_1_CLEANING_PRP.md     # Data cleaning blueprint
-│   └── PHASE_1_AUGMENTATION_PRP.md # Data augmentation blueprint
-│
-└── phases/                         # Phase documentation (Word files)
-    ├── Phase_2_Local_Vector_Store_RAG.docx
-    ├── Phase_3_Groq_LLM_Engine.docx
-    ├── Phase_4_Streamlit_Dashboard.docx
-    └── Phase_5_Evaluation_Submission.docx
-```
 
----
+## Setup
 
-## 🚀 Getting Started
-
-### 1. Install Dependencies
+Create and activate a virtual environment, then install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Configure Environment
-
-Create a `.env` file in the project root:
+Create `.env` in the project root:
 
 ```env
 GROQ_API_KEY=gsk_your_key_here
-MONGO_URI=mongodb://localhost:27017/    # optional
-MONGO_DB=arabic_absa                   # optional
+MONGO_URI=mongodb://localhost:27017/
+MONGO_DB=arabic_absa
 ```
 
-> **MongoDB is optional.** The dashboard works without it — only prediction logging is disabled.
+`GROQ_API_KEY` is only required for Groq-backed batch prediction. The local dashboard can run without Groq. MongoDB is optional; SQLite logging works by default.
 
-### 3. Run the Pipeline
+## Run The System
 
-Execute phases in order:
+### Start the local dashboard
 
 ```bash
-# Phase 1a — Clean raw data
-python scripts/data_cleaning_phase.py
-
-# Phase 1b — Validate cleaned data (QA gatekeeper)
-python scripts/validate_cleaning.py
-
-# Phase 1c — Augment with synthetic data
-python scripts/augment_data.py
-
-# Phase 2 — Build ChromaDB vector store
-python scripts/rag_utils.py
-
-# Phase 3a — Train local fallback classifier
-python scripts/train_local_weights.py
-
-# Phase 3b — Train full production model
-python train_absa.py
-
-# Phase 4 — Launch dashboard
-streamlit run app.py
+python app.py --host 127.0.0.1 --port 8501
 ```
 
-### Cleaning Flags
+Then open:
+
+```text
+http://127.0.0.1:8501
+```
+
+On Windows you can also use:
+
+```powershell
+.\scripts\run_ui.ps1
+```
+
+or:
+
+```bat
+scripts\run_ui.bat
+```
+
+### Train the main local model
 
 ```bash
-# Drop reviews with empty text
-python scripts/data_cleaning_phase.py --drop-empty-text
-
-# Disable Arabic normalization
-python scripts/data_cleaning_phase.py --disable-arabic-normalization
-
-# Custom output directory
-python scripts/data_cleaning_phase.py --output-dir Data/processed
+python train_absa.py --input Data/processed/train_augmented_wide.csv --output models/local_absa_weights_v3_wide.joblib
 ```
 
----
+The current checked-in metadata reports:
 
-## 🧠 Model Details
+| Metric | Value |
+|---|---:|
+| Training samples | 2,815 |
+| Best threshold | 0.55 |
+| Max aspects per review | 4 |
+| Holdout micro F1 | 0.692 |
 
-### Aspect Taxonomy
+### Build or rebuild the RAG vector store
 
-The system recognizes exactly **9 aspects**:
-
-| Aspect | Description |
-|---|---|
-| `food` | Food quality, taste, freshness |
-| `service` | Staff, responsiveness, attitude |
-| `price` | Value for money, cost |
-| `cleanliness` | Hygiene, tidiness |
-| `delivery` | Speed, packaging, accuracy |
-| `ambiance` | Atmosphere, decor, noise |
-| `app_experience` | Mobile/web app usability |
-| `general` | Overall impression (no specific aspect) |
-| `none` | No meaningful sentiment expressed |
-
-### Sentiment Labels
-
-`positive` · `negative` · `neutral`
-
----
-
-### Inference Chain
-
-```
-Input Review
-     │
-     ├─► Groq llama-3.3-70b-versatile  ──► Parse JSON ──► ✅ Return
-     │         (primary, rate-limited)         │
-     │                                         │ parse fail / timeout
-     ├─► Groq llama-3.1-8b-instant     ──► Parse JSON ──► ✅ Return
-     │         (fast fallback)                 │
-     │                                         │ Groq unavailable
-     └─► Local TF-IDF + OvR Ensemble   ──────────────────► ✅ Return
-               (5 versioned weight files, CPU-only)
+```bash
+python scripts/rag_utils.py --input Data/processed/train_augmented.csv
 ```
 
-### Local Ensemble Weights
+This uses `transformers` with `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` from the local cache when available. If the model cannot load, the code falls back to a local hashing embedder so the pipeline stays CPU-only.
 
-| Model File | Weight |
+### Run a single Groq-backed prediction
+
+```bash
+python scripts/groq_engine.py --review "sample Arabic review text"
+```
+
+### Export hidden-test predictions
+
+Local-only, no Groq API calls:
+
+```bash
+python scripts/groq_engine.py --mode hidden --disable-groq --input "Data/DeepX_hidden_test .xlsx" --predictions-output Data/processed/deepx_hidden_predictions.json
+```
+
+Groq + RAG enabled:
+
+```bash
+python scripts/groq_engine.py --mode hidden --input "Data/DeepX_hidden_test .xlsx" --predictions-output Data/processed/deepx_hidden_predictions.json
+```
+
+### Run validation
+
+```bash
+python scripts/groq_engine.py --mode validation --val-csv Data/processed/val_clean.csv --output Data/processed/val_results.json --predictions-output Data/processed/val_predictions.json
+```
+
+## Output Schema
+
+The live predictor returns:
+
+```json
+{
+  "predictions": [
+    {
+      "aspect": "food",
+      "sentiment": "positive"
+    },
+    {
+      "aspect": "service",
+      "sentiment": "negative"
+    }
+  ]
+}
+```
+
+Hidden-test exports use submission rows:
+
+```json
+{
+  "review_id": 1,
+  "aspects": ["food", "service"],
+  "aspect_sentiments": {
+    "food": "positive",
+    "service": "negative"
+  }
+}
+```
+
+## Labels
+
+Valid aspects:
+
+- `food`
+- `service`
+- `price`
+- `cleanliness`
+- `delivery`
+- `ambiance`
+- `app_experience`
+- `general`
+- `none`
+
+Valid sentiments:
+
+- `positive`
+- `negative`
+- `neutral`
+
+The production label space is 25 classes: every aspect/sentiment combination used by the trainer, with `none|neutral` as the only `none` class.
+
+## Inference Behavior
+
+`app.py` uses `predict_local()` so demos are fast, free, and CPU-only:
+
+```text
+review text
+   -> clean_text()
+   -> local_absa_weights_v3_wide.joblib
+   -> validated JSON
+   -> SQLite log
+   -> optional MongoDB mirror
+```
+
+`scripts/groq_engine.py` can also use Groq for batch or CLI prediction:
+
+```text
+review text
+   -> optional RAG few-shot examples
+   -> Groq llama-3.3-70b-versatile
+   -> Groq llama-3.1-8b-instant fallback
+   -> local model fallback
+   -> heuristic fallback
+   -> validated JSON
+```
+
+The Groq rate limiter is set to 28 requests per minute and 14,400 requests per day.
+
+## Tech Stack
+
+| Area | Technology |
 |---|---|
-| `local_absa_weights_v3_wide.joblib` | 0.70 |
-| `local_absa_weights_v2.joblib` | 0.50 |
-| `local_absa_weights.joblib` | 0.40 |
-| `local_absa_weights_v4_meta.joblib` | 0.30 |
-| `pseudo_labels_weights.joblib` | 0.30 |
+| Data processing | `pandas`, `re`, `pyarabic` |
+| Local ML | `scikit-learn`, `joblib` |
+| Optional LLM | `groq`, `python-dotenv` |
+| Optional RAG | `chromadb`, `transformers`, `torch` |
+| Web UI | Python `http.server`, HTML, CSS, JavaScript |
+| Local logging | `sqlite3` |
+| Optional logging mirror | `pymongo` |
 
-> Threshold: `0.55` · Max aspects per review: `4` · Top-gap filter: `0.2`
+## Important Notes
 
----
+- The README previously mentioned Streamlit and Plotly, but the current app is a custom HTTP dashboard.
+- The README previously listed Phase 1 scripts that are not present in this workspace. The processed CSV artifacts are present under `Data/processed/`.
+- `scripts/data_pipeline.py` is currently an empty placeholder.
+- The checked-in UI and model path target `models/local_absa_weights_v3_wide.joblib`.
 
-## 📊 Dashboard
+## License
 
-Launch with `streamlit run app.py` to access:
-
-- **Live Prediction** — enter any Arabic review and analyze it
-- **Demo Reviews** — 5 pre-loaded example reviews to explore quickly
-- **Metrics Bar** — total predictions, average latency (ms), parse success rate
-- **Recent Predictions Log** — last 20 predictions from MongoDB
-- **Class Distribution Chart** — aspect × sentiment breakdown (Plotly)
-
----
-
-## 🗄️ Data Outputs
-
-All generated files appear under `Data/processed/`:
-
-| File | Description |
-|---|---|
-| `train_cleaned_wide.csv` | One row per review |
-| `train_cleaned_long.csv` | One row per aspect-review pair |
-| `validation_cleaned_wide.csv` | Cleaned validation set (wide) |
-| `validation_cleaned_long.csv` | Cleaned validation set (long) |
-| `unlabeled_cleaned.csv` | Cleaned unlabeled data |
-| `train_augmented.csv` | Final training set after augmentation |
-| `cleaning_report.json` | Summary stats from the cleaning run |
-| `val_predictions.json` | Validation set predictions |
-| `deepx_hidden_predictions.json` | Hidden test set submission |
-
----
-
-## 🔧 Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Data Processing | `pandas`, `pyarabic`, `re` |
-| LLM Inference | `groq` (Groq API — free tier) |
-| RAG / Vector Store | `chromadb`, `sentence-transformers` |
-| Local ML | `scikit-learn` (TF-IDF + One-vs-Rest LR) |
-| Translation (augment) | `Helsinki-NLP/opus-mt-ar-en` + `opus-mt-en-ar` |
-| Dashboard | `streamlit`, `plotly` |
-| Operational DB | `pymongo` (MongoDB) |
-| Local Cache DB | `sqlite3` (built-in) |
-| Config | `python-dotenv` |
-
----
-
-## ⚙️ Configuration Reference
-
-All paths are resolved in `scripts/config.py`:
-
-| Variable | Default |
-|---|---|
-| `GROQ_API_KEY` | *(required, from `.env`)* |
-| `MONGO_URI` | `mongodb://localhost:27017/` |
-| `MONGO_DB` | `arabic_absa` |
-| `RAG_EMBEDDING_MODEL` | `paraphrase-multilingual-MiniLM-L12-v2` |
-| `CHROMA_STORE_DIR` | `<root>/chroma_store/` |
-| `SQLITE_DB_PATH` | `<root>/absa_phase2.db` |
-
----
-
-## 📋 Coding Standards
-
-- Clean, modular Python with **type hints** throughout
-- Missing values handled gracefully at every step
-- No hardcoded API keys — always use `os.environ.get("GROQ_API_KEY")`
-- Console progress logs on all long-running operations
-- Rate limiter enforces **28 req/min** and **14,400 req/day** against Groq's free tier
-
----
-
-## 📄 License
-
-This project was built for the DeepX Hackathon. All rights reserved by the respective authors.
+Built for the DeepX Hackathon. All rights reserved by the respective authors.
